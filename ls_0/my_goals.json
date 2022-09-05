@@ -1,5 +1,6 @@
 {
   "goal-01": "I'm going to finish this bloody course no matter what",
   "goal-02": "I'll master front-end development",
-  "goal-03": "I'll make my wife and son proud of their daddy :)"
+  "goal-03": "I'll make my wife and son proud of their daddy :)",
+  "test": "I'll try to add -> commit -> push this in the dev's branch and hope it would not synch with main without my interference"
 }
