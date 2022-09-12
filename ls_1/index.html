@@ -451,7 +451,9 @@
           alt="ladies working with a laptop"
         />
 
-        <img src="./img/quotemark.svg" width="39" alt="quote marks symbol" />
+        <svg width="39" height="31">
+          <use href="./img/sprite.svg#icon-quotemark"></use>
+        </svg>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa quae
@@ -459,6 +461,13 @@
           sunt explicabo.
         </p>
         <p><strong>Stephanie Magion</strong></p>
+        <div>
+          <span class="dot" onclick="currentSlide(1)">•</span>
+          <span class="dot" onclick="currentSlide(2)">•</span>
+          <span class="dot" onclick="currentSlide(3)">•</span>
+          <span class="dot" onclick="currentSlide(4)">•</span>
+          <span class="dot" onclick="currentSlide(5)">•</span>
+        </div>
       </section>
       <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
       <section>
@@ -541,13 +550,13 @@
             <a href="">Read Now</a>
           </li>
         </ul>
-        <ul>
-          <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">5</a></li>
-        </ul>
+        <div>
+          <span class="digit" onclick="currentSlide(1)">1</span>
+          <span class="digit" onclick="currentSlide(2)">2</span>
+          <span class="digit" onclick="currentSlide(3)">3</span>
+          <span class="digit" onclick="currentSlide(4)">4</span>
+          <span class="digit" onclick="currentSlide(5)">5</span>
+        </div>
       </section>
       <!-- -=-=-=-=-=-SUBMIT SECTION-=-=-=-=-=- -->
       <form id="submit-form" action="submit-your-contacts">
