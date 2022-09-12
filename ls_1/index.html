@@ -151,7 +151,11 @@
         <h3>2000+ Online courses</h3>
         <ul>
           <li>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="prev" onclick="plusSlides(-1)">
+              <svg width="40" height="40">
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
+              </svg>
+            </a>
           </li>
           <li>
             <img
@@ -253,7 +257,11 @@
             <p>(4)</p>
           </li>
           <li>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="next" onclick="plusSlides(1)">
+              <svg width="40" height="40">
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -264,7 +272,18 @@
           width="730"
           alt="people working at the laptop"
         />
-        <img src="./img/slide-right.svg" alt="play button" />
+        <span id="play-button-container">
+          <span class="play-button play-button-before">
+            <svg width="40" height="40">
+              <use href="./img/sprite.svg#icon-play-normal"></use>
+            </svg>
+          </span>
+          <span class="play-button play-button-after">
+            <svg width="40" height="40">
+              <use href="./img/sprite.svg#icon-play-pressed"></use>
+            </svg>
+          </span>
+        </span>
         <p>UNIVERSOTY DESCRIPTION</p>
         <h2>Take a tour</h2>
         <p>
@@ -289,8 +308,6 @@
           </li>
         </ul>
         <a href="">Read More</a>
-        <img src="./img/circle.svg" alt="randon circle shape" />
-        <img src="./img/square.svg" alt="randon square shape" />
       </section>
       <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
       <section>
