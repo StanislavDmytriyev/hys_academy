@@ -151,12 +151,13 @@
         <h3>2000+ Online courses</h3>
         <ul>
           <li>
-            <a class="prev" onclick="plusSlides(-1)">
+            <button type="button" class="slick-prev">
               <svg width="40" height="40">
                 <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
-            </a>
+            </button>
           </li>
+
           <li>
             <img
               src="./img/handsome.png"
@@ -257,11 +258,11 @@
             <p>(4)</p>
           </li>
           <li>
-            <a class="next" onclick="plusSlides(1)">
+            <button type="button" class="slick-next">
               <svg width="40" height="40">
                 <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </section>
@@ -409,6 +410,11 @@
           veritatis et quasiarchitecto beatae vitae dicta sunt explicabo.
         </p>
         <ul>
+          <button type="button" class="slick-prev">
+            <svg width="40" height="40">
+              <use href="./img/sprite.svg#icon-slider-normal"></use>
+            </svg>
+          </button>
           <li>
             <img
               src="./img/graphicdesign.png"
@@ -442,6 +448,13 @@
             />
             <p>Education</p>
           </li>
+          <li>
+            <button type="button" class="slick-next">
+              <svg width="40" height="40">
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
+              </svg>
+            </button>
+          </li>
         </ul>
       </section>
       <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
@@ -463,13 +476,43 @@
           sunt explicabo.
         </p>
         <p><strong>Stephanie Magion</strong></p>
-        <div>
-          <span class="dot" onclick="currentSlide(1)">•</span>
-          <span class="dot" onclick="currentSlide(2)">•</span>
-          <span class="dot" onclick="currentSlide(3)">•</span>
-          <span class="dot" onclick="currentSlide(4)">•</span>
-          <span class="dot" onclick="currentSlide(5)">•</span>
-        </div>
+        <ul>
+          <li>
+            <button type="button" class="slick-next">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="slick-next active">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-slick-dot-active"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </section>
       <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
       <section>
@@ -552,13 +595,23 @@
             <a href="">Read Now</a>
           </li>
         </ul>
-        <div>
-          <span class="digit" onclick="currentSlide(1)">1</span>
-          <span class="digit" onclick="currentSlide(2)">2</span>
-          <span class="digit" onclick="currentSlide(3)">3</span>
-          <span class="digit" onclick="currentSlide(4)">4</span>
-          <span class="digit" onclick="currentSlide(5)">5</span>
-        </div>
+        <ul>
+          <li>
+            <button type="button" class="slick-next">1</button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">2</button>
+          </li>
+          <li>
+            <button type="button" class="slick-next active">3</button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">4</button>
+          </li>
+          <li>
+            <button type="button" class="slick-next">5</button>
+          </li>
+        </ul>
       </section>
       <!-- -=-=-=-=-=-SUBMIT SECTION-=-=-=-=-=- -->
       <form id="submit-form" action="submit-your-contacts">
