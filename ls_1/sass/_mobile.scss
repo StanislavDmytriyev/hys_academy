@@ -1,6 +1,17 @@
 body {
   font-family: "Montserrat", sans-serif;
-  text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  box-sizing: border-box;
+}
+
+button#hamburgerBtn {
+  background: none;
+  border: none;
+  color: $primaryBlue;
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
 }

@@ -1,4 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box; }
+
 html,
+button,
 body,
 div,
 span,
@@ -79,9 +88,6 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
@@ -122,9 +128,18 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  box-sizing: border-box; }
+  font-family: "Montserrat", sans-serif; }
+
+button#hamburgerBtn {
+  background: none;
+  border: none;
+  color: #1b63f0;
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer; }
+
+header {
+  display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
