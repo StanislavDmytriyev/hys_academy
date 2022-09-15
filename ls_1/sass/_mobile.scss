@@ -17,7 +17,7 @@ button#hamburgerBtn {
 
 .main-logo:focus,
 .main-logo:hover {
-  --color1: $blackBase;
+  --color2: $blackBase;
 }
 
 .header-nav-link {
@@ -253,7 +253,7 @@ section.take-tour .university-description {
   height: 40px;
 
   background: #64be97;
-  border: 2px solid #ffffff;
+  border: 2px solid $whiteBase;
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px;
 }
@@ -263,7 +263,7 @@ section.take-tour .university-description {
   width: 40px;
   height: 40px;
   background: #64be97;
-  border: 2px solid #ffffff;
+  border: 2px solid $whiteBase;
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px;
   cursor: pointer;
@@ -279,4 +279,314 @@ section.take-tour .university-description {
   background: #55b089;
   box-shadow: none;
   padding: 7px 10px;
+}
+
+.another-choose-us {
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+  ul > li > h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  ul > li > p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $greyText;
+  }
+  aside {
+    background-color: #fff9f1;
+  }
+  aside > .featured {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.22;
+    letter-spacing: 0.4em;
+    color: #f6f2e9;
+  }
+  aside > p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $greyText;
+  }
+  aside > .days > span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #91a3ed;
+  }
+  aside > .hours > span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #f0c41b;
+  }
+  aside > .minutes > span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #fe5f60;
+  }
+  aside > .featured-card > img {
+    border-radius: 8px;
+  }
+  aside .featured-card-info {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  aside .featured-card-info > h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: $whiteBase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  aside .featured-card-info > p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: #bfbfbf;
+  }
+}
+
+.which-you-prefer-section {
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+    color: $greyText;
+  }
+  ul {
+    display: flex;
+  }
+  ul > li > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: $whiteBase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.our-great-customers {
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $greyText;
+  }
+  p > strong {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  ul {
+    display: flex;
+  }
+  ul > li > button:active {
+    --color3: #1b63f0;
+  }
+}
+
+.bg-decor-blue-square {
+  width: 344px;
+  height: 344px;
+  left: 0px;
+  top: 0px;
+  background: #637af2;
+  border-radius: 24px;
+}
+
+.bg-decor-green-rectangular {
+  width: 415px;
+  height: 264px;
+  background: #d6fae7;
+  border-radius: 16px 16px 0px 16px;
+}
+
+.get-started {
+  background-image: url(../img/background.png);
+  display: flex;
+  .get-started-slogan {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $whiteBase;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    color: #64be97;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: $whiteBase;
+    width: 50%;
+  }
+  aside {
+    width: 50%;
+  }
+  aside > p {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    color: $whiteBase;
+  }
+  aside > ul > li > p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $whiteBase;
+  }
+}
+
+.transparent-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $whiteBase;
+  padding: 12px 20px;
+  width: 142px;
+  height: 40px;
+  border: 1px solid $whiteBase;
+  border-radius: 22px;
+}
+
+.transparent-button:hover,
+.transparent-button:focus {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.transparent-button:active {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid $whiteBase;
+}
+
+.latest-blog {
+  h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+  }
+  ul > li > h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    color: #5d74e4;
+  }
+  ul > li > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  ul > li > a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $blackBase;
+  }
+  ul > li > button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #5d74e4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    background: $whiteBase;
+    border-radius: 20px;
+    padding: 8px;
+  }
+  ul > li > button:hover,
+  button:focus {
+    box-shadow: 0px 4px 16px #e2edfb;
+  }
+
+  ul > li > button:active {
+    border: 1px solid #64be97;
+    box-shadow: none;
+  }
+}
+
+#submit-form {
+  input {
+    padding: 0px 12px;
+    width: 420px;
+    height: 44px;
+    background: #f3f6fc;
+    border-radius: 22px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $greyText;
+  }
+}
+
+.green-and-white-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $whiteBase;
+  padding: 12px 20px;
+  width: 109px;
+  height: 40px;
+  background: #64be97;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.green-white-button {
+  padding: 10px 0px;
+  width: 120px;
+  height: 44px;
+  background: #64be97;
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $whiteBase;
+  cursor: pointer;
+}
+
+.footer-info {
+  .footer-nav-expanded {
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    ul > li > a {
+      font-size: 14px;
+      line-height: 1.57;
+      color: $greyText;
+    }
+  }
+  .footer-nav-minimized {
+    ul > li > a {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.33;
+      color: $greyText;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 }

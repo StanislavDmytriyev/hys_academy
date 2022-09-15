@@ -338,9 +338,9 @@
         <a class="blue-button" href="">Read More</a>
       </section>
       <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
-      <section>
+      <section class="another-choose-us">
         <h2>Why shoose us?</h2>
-
+        <div class="blue-line"></div>
         <ul>
           <li>
             <h3>International Conference on Bussiness</h3>
@@ -404,34 +404,38 @@
           </li>
         </ul>
         <aside>
-          <h3>FEATURED</h3>
-          <p>$213 days</p>
-          <p>23 Hours</p>
-          <p>59 Min</p>
-          <img
-            src="./img/course-01.jpg"
-            alt="some tablet fancy stylish image"
-          />
-          <h3>International Conference...</h3>
-          <svg width="20" height="20">
-            <use href="./img/sprite.svg#icon-calendar"></use>
-          </svg>
-          <p>July 8, 2018</p>
-          <svg width="20" height="20">
-            <use href="./img/sprite.svg#icon-clock"></use>
-          </svg>
-          <p>5:00pm - 7:00pm</p>
-          <svg width="20" height="20">
-            <use href="./img/sprite.svg#icon-map"></use>
-          </svg>
-          <p>United States</p>
+          <h3 class="featured">FEATURED</h3>
+          <p class="days"><span>$213</span> Days</p>
+          <p class="hours"><span>23</span> Hours</p>
+          <p class="minutes"><span>59</span> Min</p>
+          <div class="featured-card">
+            <img
+              src="./img/course-01.jpg"
+              alt="some tablet fancy stylish image"
+            />
+            <div class="featured-card-info">
+              <h3>International Conference...</h3>
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#icon-calendar"></use>
+              </svg>
+              <p>July 8, 2018</p>
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#icon-clock"></use>
+              </svg>
+              <p>5:00pm - 7:00pm</p>
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#icon-map"></use>
+              </svg>
+              <p>United States</p>
+            </div>
+          </div>
         </aside>
-        <a href="">Become a Sponsor</a>
+        <a class="blue-button" href="">Become a Sponsor</a>
       </section>
       <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
-      <section>
+      <section class="which-you-prefer-section">
         <h2>Which one do you prefer?</h2>
-
+        <div class="blue-line"></div>
         <p>
           Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
           veritatis et quasiarchitecto beatae vitae dicta sunt explicabo.
@@ -449,8 +453,7 @@
               src="./img/graphicdesign.png"
               width="198"
               alt="generic graphic design image"
-            />Latest Blog blue generic horizontal line DESIGN
-
+            />
             <p>Graphic Design</p>
           </li>
           <li>
@@ -487,14 +490,25 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
-      <section>
+      <section class="our-great-customers">
+        <div class="bg-decor-blue-square"></div>
+        <div class="background-spot">
+          <svg width="796" height="597">
+            <use href="./img/sprite.svg#icon-green-messy-spot"></use>
+          </svg>
+        </div>
+        <div class="background-circle">
+          <svg width="515" height="525">
+            <use href="./img/sprite.svg#icon-green-circle"></use>
+          </svg>
+        </div>
         <h2>Our great customers</h2>
+        <div class="blue-line"></div>
         <img
           src="./img/working-at-pc.jpg"
           width="344"
           alt="ladies working with a laptop"
         />
-
         <svg width="39" height="31">
           <use href="./img/sprite.svg#icon-quotemark"></use>
         </svg>
@@ -523,7 +537,7 @@
           <li>
             <button type="button" class="slick-next active">
               <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-active"></use>
+                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
               </svg>
             </button>
           </li>
@@ -544,17 +558,19 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
-      <section>
-        <p>IT’S FAST, FREE AND VERY EASY!</p>
-        <h2>Ready to get started?</h2>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
-        </p>
-        <a href="#submit-form">Apply now</a>
-        <a href="">Request service</a>
+      <section class="get-started">
+        <div>
+          <p class="get-started-slogan">IT’S FAST, FREE AND VERY EASY!</p>
+          <h2>Ready to get started?</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+          <a class="green-and-white-button" href="#submit-form">Apply now</a>
+          <a class="transparent-button" href="">Request service</a>
+        </div>
         <aside>
           <svg width="24" height="24">
             <use href="./img/sprite.svg#icon-chainlink"></use>
@@ -589,11 +605,12 @@
         </aside>
       </section>
       <!-- -=-=-=-=-=-LATEST BLOG SECTION-=-=-=-=-=- -->
-      <section>
+      <section class="latest-blog">
         <h2>Latest Blog</h2>
-
+        <div class="blue-line"></div>
         <ul>
           <li>
+            <div class="bg-decor-green-rectangular"></div>
             <h3>DESIGN</h3>
             <img
               src="./img/fancy-work02.png"
@@ -609,6 +626,7 @@
             <a href="">Read Now</a>
           </li>
           <li>
+            <div class="bg-decor-green-rectangular"></div>
             <h3>DESIGN</h3>
             <img
               src="./img/fancy-work01.png"
@@ -647,12 +665,12 @@
         <input type="text" placeholder="Name Surname" />
         <input type="text" placeholder="Phone" />
         <input type="text" placeholder="Enter your email..." />
-        <button type="submit">Send</button>
+        <button class="green-white-button" type="submit">Send</button>
       </form>
     </main>
     <!-- -=-=-=-=-=-FOOTER-=-=-=-=-=- -->
-    <footer>
-      <nav>
+    <footer class="footer-info">
+      <nav class="footer-nav-expanded">
         <ul>
           <li>
             <a class="main-logo" href="./index.html">
@@ -739,7 +757,7 @@
         </ul>
       </nav>
       <p>All rights Reserved</p>
-      <nav>
+      <nav class="footer-nav-minimized">
         <ul>
           <li><a href=""></a>About company</li>
           <li><a href=""></a>Privacy Policy</li>
