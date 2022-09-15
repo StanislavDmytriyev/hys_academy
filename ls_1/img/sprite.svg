@@ -19,13 +19,13 @@
 <path fill="#55b089" style="fill: var(--color5, #55b089)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path fill="#fff" style="fill: var(--color4, #fff)" d="M12 8.8l11.2 7.2-11.2 7.2v-14.4z"></path>
 </symbol>
-<symbol id="icon-slider-hover" viewBox="0 0 32 32">
-<path fill="#64be97" style="fill: var(--color3, #64be97)" d="M16 5.333c4.909 0 8.889 3.98 8.889 8.889s-3.98 8.889-8.889 8.889c-4.909 0-8.889-3.98-8.889-8.889s3.98-8.889 8.889-8.889z"></path>
-<path fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.8889" d="M14.667 16.889l2.667-2.667-2.667-2.667"></path>
-</symbol>
 <symbol id="icon-slider-normal" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color4, #fff)" d="M16 5.333c4.909 0 8.889 3.98 8.889 8.889s-3.98 8.889-8.889 8.889c-4.909 0-8.889-3.98-8.889-8.889s3.98-8.889 8.889-8.889z"></path>
 <path fill="none" stroke="#64be97" style="stroke: var(--color3, #64be97)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.8889" d="M14.667 16.889l2.667-2.667-2.667-2.667"></path>
+</symbol>
+<symbol id="icon-slider-hover" viewBox="0 0 32 32">
+<path fill="#64be97" style="fill: var(--color3, #64be97)" d="M16 5.333c4.909 0 8.889 3.98 8.889 8.889s-3.98 8.889-8.889 8.889c-4.909 0-8.889-3.98-8.889-8.889s3.98-8.889 8.889-8.889z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.8889" d="M14.667 16.889l2.667-2.667-2.667-2.667"></path>
 </symbol>
 <symbol id="icon-slider-pressed" viewBox="0 0 32 32">
 <path fill="#55b089" style="fill: var(--color5, #55b089)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
