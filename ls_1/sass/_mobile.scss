@@ -1,21 +1,112 @@
 body {
   font-family: "Montserrat", sans-serif;
+  color: $blackBase;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button#hamburgerBtn {
   background: none;
   border: none;
-  color: $primaryBlue;
+  color: $blueMain;
   font-size: 24px;
   height: 24px;
   width: 24px;
   cursor: pointer;
 }
 
-header {
+.main-logo:focus,
+.main-logo:hover {
+  --color1: $blackBase;
+}
+
+.header-nav-link {
+  color: $whiteBase;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $blueMain;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blue-button {
+  background-color: $blueMain;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $whiteBase;
+  padding: 12px 24px;
+  border-radius: 22px;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: $blueButtonHover;
+}
+
+.blue-button:active {
+  background-color: $blueButtonPressed;
+}
+
+.green-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  padding: 12px 24px;
+  color: $blackBase;
+  background-color: $greenVeryLight;
+  padding: 12px 24px;
+  border-radius: 22px;
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: $greenButtonHover;
+}
+
+.green-button:active {
+  background-color: $greenButtonPressed;
+}
+
+header > nav {
   display: flex;
 }
 
-.main-logo:hover {
-  --color1: #000000;
+header > nav > ul {
+  display: flex;
+}
+
+.hero-section > h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.hero-section > p {
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.our-clients > ul {
+  display: flex;
+}
+
+.choose-us-section > h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+.blue-line {
+  width: 56px;
+  height: 2px;
+  background-color: $blueMain;
 }
