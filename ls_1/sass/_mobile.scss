@@ -648,4 +648,12 @@ section.take-tour .university-description {
       opacity: 0.5;
     }
   }
+  .social-networks-contacts:focus,
+  .social-networks-contacts:hover {
+    --color33: var(--blueMain);
+  }
+  .social-networks-contacts:active {
+    --color33: var(--blackMain);
+    opacity: 0.5;
+  }
 }
