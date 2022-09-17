@@ -78,21 +78,6 @@ button#hamburgerBtn {
 .main-logo:hover {
   --color2: var(--blackMain); }
 
-.header-nav-link {
-  color: var(--whiteMain);
-  font-size: 12px;
-  line-height: 1.33;
-  font-weight: 600;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-
-.header-nav-link:hover,
-.header-nav-link:focus {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--blueMain);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-
 .blue-button {
   background-color: var(--blueMain);
   font-weight: 700;
@@ -126,11 +111,40 @@ button#hamburgerBtn {
 .green-button:active {
   background-color: var(--greenButtonPressed); }
 
-header > nav {
-  display: flex; }
+.send-button {
+  padding: 12px 24px;
+  width: 120px;
+  height: 40px;
+  background: #64be97;
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--whiteMain);
+  cursor: pointer; }
 
-header > nav > ul {
+.send-button:hover,
+.send-button:focus {
+  background: #25de8e;
+  box-shadow: 0px 10px 16px 4px rgba(52, 210, 142, 0.58); }
+
+.send-button:active {
+  background: #4dda9d;
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58); }
+
+.header nav {
   display: flex; }
+.header nav > ul {
+  display: flex; }
+.header .header-nav-link {
+  color: var(--whiteMain);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600; }
+.header .header-nav-link:hover,
+.header .header-nav-link:focus {
+  color: var(--blueMain); }
 
 .hero-section > h1 {
   font-weight: 700;
@@ -155,8 +169,7 @@ header > nav > ul {
 .choose-us-section h3 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  line-height: 1.5; }
 
 .choose-us-section p {
   font-size: 14px;
@@ -206,7 +219,6 @@ header > nav > ul {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--whiteMain); }
 
 .slick-prev {
@@ -264,8 +276,7 @@ section.take-tour .university-description {
 .take-tour p {
   font-size: 14px;
   line-height: 1.57;
-  color: var(--greyText);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  color: var(--greyText); }
 
 .pink-bulletpoint {
   width: 8px;
@@ -350,8 +361,7 @@ section.take-tour .university-description {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--whiteMain);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  color: var(--whiteMain); }
 .another-choose-us aside .featured-card-info > p {
   font-size: 14px;
   line-height: 1.57;
@@ -471,8 +481,7 @@ section.take-tour .university-description {
 .latest-blog ul > li > h4 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  line-height: 1.5; }
 .latest-blog ul > li > a {
   font-weight: 700;
   font-size: 12px;
@@ -484,7 +493,6 @@ section.take-tour .university-description {
   line-height: 1.5;
   text-align: center;
   color: #5d74e4;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 40px;
   height: 40px;
   background: var(--whiteMain);
@@ -508,28 +516,6 @@ section.take-tour .university-description {
   line-height: 1.14;
   color: var(--greyText); }
 
-.send-button {
-  padding: 12px 24px;
-  width: 120px;
-  height: 40px;
-  background: #64be97;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--whiteMain);
-  cursor: pointer; }
-
-.send-button:hover,
-.send-button:focus {
-  background: #25de8e;
-  box-shadow: 0px 10px 16px 4px rgba(52, 210, 142, 0.58); }
-
-.send-button:active {
-  background: #4dda9d;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58); }
-
 .footer-info .footer-nav-expanded h3 {
   font-weight: 700;
   font-size: 16px;
@@ -542,7 +528,6 @@ section.take-tour .university-description {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  color: var(--greyText);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  color: var(--greyText); }
 
 /*# sourceMappingURL=styles.css.map */

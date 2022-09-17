@@ -20,23 +20,6 @@ button#hamburgerBtn {
   --color2: var(--blackMain);
 }
 
-.header-nav-link {
-  color: var(--whiteMain);
-  font-size: 12px;
-  line-height: 1.33;
-  font-weight: 600;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--blueMain);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .blue-button {
   background-color: var(--blueMain);
   font-weight: 700;
@@ -76,12 +59,49 @@ button#hamburgerBtn {
   background-color: var(--greenButtonPressed);
 }
 
-header > nav {
-  display: flex;
+.send-button {
+  padding: 12px 24px;
+  width: 120px;
+  height: 40px;
+  background: #64be97;
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--whiteMain);
+  cursor: pointer;
 }
 
-header > nav > ul {
-  display: flex;
+.send-button:hover,
+.send-button:focus {
+  background: #25de8e;
+  box-shadow: 0px 10px 16px 4px rgba(52, 210, 142, 0.58);
+}
+
+.send-button:active {
+  background: #4dda9d;
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+}
+
+// <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
+.header {
+  nav {
+    display: flex;
+  }
+  nav > ul {
+    display: flex;
+  }
+  .header-nav-link {
+    color: var(--whiteMain);
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 600;
+  }
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    color: var(--blueMain);
+  }
 }
 
 .hero-section > h1 {
@@ -114,7 +134,6 @@ header > nav > ul {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .choose-us-section p {
@@ -173,7 +192,6 @@ header > nav > ul {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--whiteMain);
 }
 
@@ -245,7 +263,6 @@ section.take-tour .university-description {
   font-size: 14px;
   line-height: 1.57;
   color: var(--greyText);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .pink-bulletpoint {
@@ -259,7 +276,6 @@ section.take-tour .university-description {
 .play-button:focus {
   width: 40px;
   height: 40px;
-
   background: #64be97;
   border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
@@ -350,7 +366,6 @@ section.take-tour .university-description {
     line-height: 1.5;
     text-align: center;
     color: var(--whiteMain);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   aside .featured-card-info > p {
@@ -504,7 +519,6 @@ section.take-tour .university-description {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   ul > li > a {
     font-weight: 700;
@@ -518,7 +532,6 @@ section.take-tour .university-description {
     line-height: 1.5;
     text-align: center;
     color: #5d74e4;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 40px;
     height: 40px;
     background: var(--whiteMain);
@@ -550,31 +563,6 @@ section.take-tour .university-description {
   }
 }
 
-.send-button {
-  padding: 12px 24px;
-  width: 120px;
-  height: 40px;
-  background: #64be97;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--whiteMain);
-  cursor: pointer;
-}
-
-.send-button:hover,
-.send-button:focus {
-  background: #25de8e;
-  box-shadow: 0px 10px 16px 4px rgba(52, 210, 142, 0.58);
-}
-
-.send-button:active {
-  background: #4dda9d;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
-}
-
 .footer-info {
   .footer-nav-expanded {
     h3 {
@@ -594,7 +582,6 @@ section.take-tour .university-description {
       font-size: 12px;
       line-height: 1.33;
       color: var(--greyText);
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
 }
