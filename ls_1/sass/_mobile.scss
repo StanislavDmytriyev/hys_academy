@@ -202,16 +202,19 @@ header > nav > ul {
 }
 
 .price-discounted {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   text-decoration-line: line-through;
   color: var(--whiteMain);
 }
 
-.stars-counter {
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--whiteMain);
+.popular-courses-section {
+  ul > li .stars-counter {
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--whiteMain);
+  }
 }
 
 .white-hor-line {
