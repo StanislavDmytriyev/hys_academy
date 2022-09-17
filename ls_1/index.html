@@ -5,51 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -->
-    <header class="header">
+    <header>
+      <a href="./index.html">
+        <svg width="53" height="24">
+          <use href="./img/sprite.svg#icon-logo-union"></use>
+        </svg>
+      </a>
+
       <nav>
-        <button type="button" id="hamburgerBtn">&#9776;</button>
-        <ul id="primaryNav">
-          <li><a class="header-nav-link" href="">Categories</a></li>
-          <li><a class="header-nav-link" href="">Course</a></li>
-          <li><a class="header-nav-link" href="">Explore</a></li>
-          <li><a class="header-nav-link" href="">Degrees</a></li>
+        <ul>
+          <li><a href="">Categories</a></li>
+          <li><a href="">Course</a></li>
+          <li><a href="">Explore</a></li>
+          <li><a href="">Degrees</a></li>
+          <li><a href="">Explore</a></li>
         </ul>
-        <a class="main-logo" href="./index.html">
-          <svg width="53" height="24">
-            <use href="./img/sprite.svg#icon-logo-union"></use>
-          </svg>
-        </a>
-        <a class="blue-button" href="">Explore</a>
       </nav>
     </header>
+
     <main>
       <!-- -=-=-=-=-=-HERO SECTION-=-=-=-=-=- -->
-      <section class="hero-section">
-        <h1 class="hero-slogan">Education is the most powerful weapon</h1>
+      <section>
+        <h1>Education is themost powerfull weapon</h1>
         <p>
           A bank is a financial institution accepts depositsfrom public and
           creates credit. For all of your needs.
         </p>
-        <a class="blue-button" href="">Read More</a>
-        <a class="green-button" href="#submit-form">Get started</a>
+        <a href="">Read More</a>
+        <a href="#submit-form">Get started</a>
         <img
-          src="./img/hero-image.png"
+          src="./img/student.svg"
           width="403"
           alt="Boy struggling while studying"
         />
       </section>
       <!-- -=-=-=-=-=-OUR CLIENTS SECTION-=-=-=-=-=- -->
-      <section class="our-clients">
+      <section>
         <h2 hidden>Our clients</h2>
         <ul>
           <li>
@@ -102,7 +98,7 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-WHY CHOOSE US SECTION-=-=-=-=-=- -->
-      <section class="choose-us-section">
+      <section>
         <h2>Why choose us?</h2>
         <ul>
           <li>
@@ -150,144 +146,128 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-MOST POPULAR COURSES SECTION-=-=-=-=-=- -->
-      <section class="popular-courses-section">
+      <section>
         <h2>MOST POPULAR COURSES</h2>
         <h3>2000+ Online courses</h3>
         <ul>
           <li>
             <button type="button" class="slick-prev">
               <svg width="40" height="40">
-                <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
             </button>
           </li>
+
           <li>
-            <a href="">
-              <img
-                src="./img/handsome.png"
-                width="48"
-                alt="course mentor portrait"
-              />
-              <img
-                src="./img/course-01.jpg"
-                width="270"
-                alt="design course picture"
-              />
-              <h4>DESIGN</h4>
-              <p>Learn Photoshop title</p>
-              <p class="course-price">
-                $260 <span class="price-discounted">$360</span>
-              </p>
-              <div class="container">
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-              </div>
-              <p class="stars-counter">(4)</p></a
-            >
+            <img
+              src="./img/handsome.png"
+              width="48"
+              alt="course mentor portrait"
+            />
+            <img
+              src="./img/course-01.jpg"
+              width="270"
+              alt="design course picture"
+            />
+            <h4>DESIGN</h4>
+            <p>Learn Photoshop title</p>
+            <p>$260 #360</p>
+            <div class="container">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p>(4)</p>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/indian-fella.png"
-                width="48"
-                alt="course mentor portrait"
-              />
-              <img
-                src="./img/course-02.jpg"
-                width="270"
-                alt="design course picture"
-              />
-              <h4>Marketing</h4>
-              <p>Learn Photoshop title trun...</p>
-              <p class="course-price">
-                $260 <span class="price-discounted">$360</span>
-              </p>
-              <div class="container">
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-              </div>
-              <p class="stars-counter">(4)</p>
-            </a>
+            <img
+              src="./img/indian-fella.png"
+              width="48"
+              alt="course mentor portrait"
+            />
+            <img
+              src="./img/course-02.jpg"
+              width="270"
+              alt="design course picture"
+            />
+            <h4>Marketing</h4>
+            <p>Learn Photoshop title trun...</p>
+            <p>$260 #360</p>
+            <div class="container">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p>(4)</p>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/funny-fella.png"
-                width="48"
-                alt="course mentor portrait"
-              />
-              <img
-                src="./img/course-03.jpg"
-                width="270"
-                alt="web design course picture"
-              />
-              <h4>Web design</h4>
-              <p>Learn Photoshop</p>
-              <p class="course-price">
-                $260 <span class="price-discounted">$360</span>
-              </p>
-              <div class="container">
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-                <svg width="10" height="10">
-                  <use href="./img/sprite.svg#icon-star"></use>
-                </svg>
-              </div>
-              <p class="stars-counter">(4)</p></a
-            >
+            <img
+              src="./img/funny-fella.png"
+              width="48"
+              alt="course mentor portrait"
+            />
+            <img
+              src="./img/course-03.jpg"
+              width="270"
+              alt="web design course picture"
+            />
+            <h4>Web design</h4>
+            <p>Learn Photoshop</p>
+            <p>$260 #360</p>
+            <div class="container">
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg width="10" height="10">
+                <use href="./img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <p>(4)</p>
           </li>
           <li>
             <button type="button" class="slick-next">
               <svg width="40" height="40">
-                <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
             </button>
           </li>
         </ul>
       </section>
       <!-- -=-=-=-=-=-TAKE A TOUR SECTION-=-=-=-=-=- -->
-      <section class="take-tour">
-        <div class="play">
-          <svg width="24" height="24">
-            <use href="./img/sprite.svg#icon-play"></use>
-          </svg>
-        </div>
+      <section>
         <img
           src="./img/working-at-pc.jpg"
           width="730"
@@ -305,7 +285,7 @@
             </svg>
           </span>
         </span>
-        <p class="university-description">UNIVERSOTY DESCRIPTION</p>
+        <p>UNIVERSOTY DESCRIPTION</p>
         <h2>Take a tour</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -328,11 +308,12 @@
             </p>
           </li>
         </ul>
-        <a class="blue-button" href="">Read More</a>
+        <a href="">Read More</a>
       </section>
       <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
-      <section class="another-choose-us">
-        <h2>Why choose us?</h2>
+      <section>
+        <h2>Why shoose us?</h2>
+
         <ul>
           <li>
             <h3>International Conference on Bussiness</h3>
@@ -396,37 +377,34 @@
           </li>
         </ul>
         <aside>
-          <h3 class="featured">FEATURED</h3>
-          <p class="days"><span>$213</span> Days</p>
-          <p class="hours"><span>23</span> Hours</p>
-          <p class="minutes"><span>59</span> Min</p>
-          <div class="featured-card">
-            <img
-              src="./img/course-01.jpg"
-              alt="some tablet fancy stylish image"
-            />
-            <div class="featured-card-info">
-              <h3>International Conference...</h3>
-              <svg width="20" height="20">
-                <use href="./img/sprite.svg#icon-calendar"></use>
-              </svg>
-              <p>July 8, 2018</p>
-              <svg width="20" height="20">
-                <use href="./img/sprite.svg#icon-clock"></use>
-              </svg>
-              <p>5:00pm - 7:00pm</p>
-              <svg width="20" height="20">
-                <use href="./img/sprite.svg#icon-map"></use>
-              </svg>
-              <p>United States</p>
-            </div>
-          </div>
+          <h3>FEATURED</h3>
+          <p>$213 days</p>
+          <p>23 Hours</p>
+          <p>59 Min</p>
+          <img
+            src="./img/course-01.jpg"
+            alt="some tablet fancy stylish image"
+          />
+          <h3>International Conference...</h3>
+          <svg width="20" height="20">
+            <use href="./img/sprite.svg#icon-calendar"></use>
+          </svg>
+          <p>July 8, 2018</p>
+          <svg width="20" height="20">
+            <use href="./img/sprite.svg#icon-clock"></use>
+          </svg>
+          <p>5:00pm - 7:00pm</p>
+          <svg width="20" height="20">
+            <use href="./img/sprite.svg#icon-map"></use>
+          </svg>
+          <p>United States</p>
         </aside>
-        <a class="blue-button" href="">Become a Sponsor</a>
+        <a href="">Become a Sponsor</a>
       </section>
       <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
-      <section class="which-you-prefer-section">
+      <section>
         <h2>Which one do you prefer?</h2>
+
         <p>
           Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
           veritatis et quasiarchitecto beatae vitae dicta sunt explicabo.
@@ -435,67 +413,61 @@
           <li>
             <button type="button" class="slick-prev">
               <svg width="40" height="40">
-                <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
             </button>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/graphicdesign.png"
-                width="198"
-                alt="generic graphic design image"
-              />
-              <p>Graphic Design</p>
-            </a>
+            <img
+              src="./img/graphicdesign.png"
+              width="198"
+              alt="generic graphic design image"
+            />Latest Blog blue generic horizontal line DESIGN
+
+            <p>Graphic Design</p>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/webdesign.png"
-                width="198"
-                alt="web design generic image"
-              />
-              <p>Web Design</p>
-            </a>
+            <img
+              src="./img/webdesign.png"
+              width="198"
+              alt="web design generic image"
+            />
+            <p>Web Design</p>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/marketing.png"
-                width="198"
-                alt="marketing related generic image"
-              />
-              <p>Marketing</p></a
-            >
+            <img
+              src="./img/marketing.png"
+              width="198"
+              alt="marketing related generic image"
+            />
+            <p>Marketing</p>
           </li>
           <li>
-            <a href="">
-              <img
-                src="./img/education.png"
-                width="198"
-                alt="education related generic image"
-              />
-              <p>Education</p></a
-            >
+            <img
+              src="./img/education.png"
+              width="198"
+              alt="education related generic image"
+            />
+            <p>Education</p>
           </li>
           <li>
             <button type="button" class="slick-next">
               <svg width="40" height="40">
-                <use href="./img/sprite.svg#icon-slider-arrow"></use>
+                <use href="./img/sprite.svg#icon-slider-normal"></use>
               </svg>
             </button>
           </li>
         </ul>
       </section>
       <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
-      <section class="our-great-customers">
+      <section>
         <h2>Our great customers</h2>
         <img
           src="./img/working-at-pc.jpg"
           width="344"
           alt="ladies working with a laptop"
         />
+
         <svg width="39" height="31">
           <use href="./img/sprite.svg#icon-quotemark"></use>
         </svg>
@@ -524,7 +496,7 @@
           <li>
             <button type="button" class="slick-next active">
               <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                <use href="./img/sprite.svg#icon-slick-dot-active"></use>
               </svg>
             </button>
           </li>
@@ -545,19 +517,17 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
-      <section class="get-started">
-        <div>
-          <p class="get-started-slogan">IT’S FAST, FREE AND VERY EASY!</p>
-          <h2>Ready to get started?</h2>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </p>
-          <a class="green-button" href="#submit-form">Apply now</a>
-          <a class="transparent-button" href="">Request service</a>
-        </div>
+      <section>
+        <p>IT’S FAST, FREE AND VERY EASY!</p>
+        <h2>Ready to get started?</h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+        <a href="#submit-form">Apply now</a>
+        <a href="">Request service</a>
         <aside>
           <svg width="24" height="24">
             <use href="./img/sprite.svg#icon-chainlink"></use>
@@ -565,44 +535,37 @@
           <p>Quick Link</p>
           <ul>
             <li>
-              <a href="">
-                <svg width="24" height="24">
-                  <use href="./img/sprite.svg#icon-pentool"></use>
-                </svg>
-                <p>Tution and Fees</p></a
-              >
+              <svg width="24" height="24">
+                <use href="./img/sprite.svg#icon-pentool"></use>
+              </svg>
+              <p>Tution and Fees</p>
             </li>
             <li>
-              <a href=""
-                ><svg width="24" height="24">
-                  <use href="./img/sprite.svg#icon-briefcase"></use>
-                </svg>
-                <p>Review & Rating</p></a
-              >
+              <svg width="24" height="24">
+                <use href="./img/sprite.svg#icon-briefcase"></use>
+              </svg>
+              <p>Review & Rating</p>
             </li>
             <li>
-              <a href=""
-                ><svg width="24" height="24">
-                  <use href="./img/sprite.svg#icon-book"></use>
-                </svg>
-                <p>Universoty Facilities</p></a
-              >
+              <svg width="24" height="24">
+                <use href="./img/sprite.svg#icon-book"></use>
+              </svg>
+              <p>Universoty Facilities</p>
             </li>
             <li>
-              <a href="">
-                <svg width="24" height="24">
-                  <use href="./img/sprite.svg#icon-direct-speech"></use>
-                </svg>
-                <p>Community Q&A</p></a
-              >
+              <svg width="24" height="24">
+                <use href="./img/sprite.svg#icon-direct-speech"></use>
+              </svg>
+              <p>Community Q&A</p>
             </li>
           </ul>
         </aside>
       </section>
       <!-- -=-=-=-=-=-LATEST BLOG SECTION-=-=-=-=-=- -->
-      <section class="latest-blog">
+      <section>
         <h2>Latest Blog</h2>
-        <ul class="blog-list">
+
+        <ul>
           <li>
             <h3>DESIGN</h3>
             <img
@@ -657,15 +620,15 @@
         <input type="text" placeholder="Name Surname" />
         <input type="text" placeholder="Phone" />
         <input type="text" placeholder="Enter your email..." />
-        <button class="send-button" type="submit">Send</button>
+        <button type="submit">Send</button>
       </form>
     </main>
     <!-- -=-=-=-=-=-FOOTER-=-=-=-=-=- -->
-    <footer class="footer-info">
-      <nav class="footer-nav-expanded">
+    <footer>
+      <nav>
         <ul>
           <li>
-            <a class="main-logo" href="./index.html">
+            <a href="./index.html">
               <svg width="53" height="24">
                 <use href="./img/sprite.svg#icon-logo-union"></use>
               </svg>
@@ -717,28 +680,28 @@
             <h3>Social Media</h3>
             <ul>
               <li>
-                <a class="social-networks-contacts" href="">
+                <a href="">
                   <svg width="24" height="24">
                     <use href="./img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-networks-contacts" href="">
+                <a href="">
                   <svg width="24" height="24">
                     <use href="./img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-networks-contacts" href="">
+                <a href="">
                   <svg width="24" height="24">
                     <use href="./img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="social-networks-contacts" href="">
+                <a href="">
                   <svg width="24" height="24">
                     <use href="./img/sprite.svg#icon-youtube"></use>
                   </svg>
@@ -749,13 +712,13 @@
         </ul>
       </nav>
       <p>All rights Reserved</p>
-      <nav class="footer-nav-minimized">
+      <nav>
         <ul>
-          <li><a href="">About company</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Help Center</a></li>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Site map</a></li>
+          <li><a href=""></a>About company</li>
+          <li><a href=""></a>Privacy Policy</li>
+          <li><a href=""></a>Help Center</li>
+          <li><a href=""></a>Terms</li>
+          <li><a href=""></a>Site map</li>
         </ul>
       </nav>
     </footer>
