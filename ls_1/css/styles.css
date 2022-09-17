@@ -47,16 +47,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+:root {
+  --blueMain: #1b63f0;
+  --blueButtonHover: #3d7fff;
+  --blueButtonPressed: #175ee9;
+  --whiteMain: #ffffff;
+  --blackMain: #000000;
+  --greenMain: #64be97;
+  --greenButtonHover: #c0ffe4;
+  --greenButtonPressed: #83ebbf;
+  --greenVeryLight: #97f5cd;
+  --greyText: #5c5c5c; }
+
 body {
   font-family: "Montserrat", sans-serif;
-  color: #000000;
+  color: var(--blackMain);
   font-weight: 400;
   font-style: normal; }
 
 button#hamburgerBtn {
   background: none;
   border: none;
-  color: #1b63f0;
+  color: var(--blueMain);
   font-size: 24px;
   height: 24px;
   width: 24px;
@@ -64,10 +76,10 @@ button#hamburgerBtn {
 
 .main-logo:focus,
 .main-logo:hover {
-  --color2: $blackBase; }
+  --color2: var(--blackMain); }
 
 .header-nav-link {
-  color: #ffffff;
+  color: var(--whiteMain);
   font-size: 12px;
   line-height: 1.33;
   font-weight: 600;
@@ -78,41 +90,41 @@ button#hamburgerBtn {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  color: #1b63f0;
+  color: var(--blueMain);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .blue-button {
-  background-color: #1b63f0;
+  background-color: var(--blueMain);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: #ffffff;
+  color: var(--whiteMain);
   padding: 12px 24px;
   border-radius: 22px; }
 
 .blue-button:hover,
 .blue-button:focus {
-  background-color: #3d7fff; }
+  background-color: var(--blueButtonHover); }
 
 .blue-button:active {
-  background-color: #175ee9; }
+  background-color: var(--blueButtonPressed); }
 
 .green-button {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
   padding: 12px 24px;
-  color: #000000;
-  background-color: #97f5cd;
+  color: var(--blackMain);
+  background-color: var(--greenVeryLight);
   padding: 12px 24px;
   border-radius: 22px; }
 
 .green-button:hover,
 .green-button:focus {
-  background-color: #c0ffe4; }
+  background-color: var(--greenButtonHover); }
 
 .green-button:active {
-  background-color: #83ebbf; }
+  background-color: var(--greenButtonPressed); }
 
 header > nav {
   display: flex; }
@@ -146,12 +158,12 @@ header > nav > ul {
 .choose-us-section p {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 
 .blue-line {
   width: 56px;
   height: 2px;
-  background-color: #1b63f0; }
+  background-color: var(--blueMain); }
 
 .pink-rectangular {
   width: 40px;
@@ -173,7 +185,7 @@ header > nav > ul {
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  color: #1b63f0; }
+  color: var(--blueMain); }
 
 .popular-courses-section > h3 {
   font-weight: 700;
@@ -185,14 +197,14 @@ header > nav > ul {
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
-  color: #ffffff; }
+  color: var(--whiteMain); }
 
 .popular-courses-section p {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #ffffff; }
+  color: var(--whiteMain); }
 
 .slick-prev {
   transform: rotate(180deg);
@@ -216,23 +228,23 @@ header > nav > ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: #ffffff; }
+  color: var(--whiteMain); }
 
 .price-discounted {
   font-size: 12px;
   line-height: 1.33;
   text-decoration-line: line-through;
-  color: #ffffff; }
+  color: var(--whiteMain); }
 
 .stars-counter {
   font-size: 12px;
   line-height: 1.33;
-  color: #ffffff; }
+  color: var(--whiteMain); }
 
 .white-hor-line {
   width: 270px;
   height: 1px;
-  background-color: #ffffff; }
+  background-color: var(--whiteMain); }
 
 .take-tour > h2 {
   font-weight: 700;
@@ -243,12 +255,12 @@ section.take-tour .university-description {
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
-  color: #1b63f0; }
+  color: var(--blueMain); }
 
 .take-tour p {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c;
+  color: var(--greyText);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .pink-bulletpoint {
@@ -262,7 +274,7 @@ section.take-tour .university-description {
   width: 40px;
   height: 40px;
   background: #64be97;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px; }
 
@@ -271,7 +283,7 @@ section.take-tour .university-description {
   width: 40px;
   height: 40px;
   background: #64be97;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px;
   cursor: pointer; }
@@ -297,7 +309,7 @@ section.take-tour .university-description {
 .another-choose-us ul > li > p {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 .another-choose-us aside {
   background-color: #fff9f1; }
 .another-choose-us aside > .featured {
@@ -309,7 +321,7 @@ section.take-tour .university-description {
 .another-choose-us aside > p {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 .another-choose-us aside > .days > span {
   font-weight: 700;
   font-size: 18px;
@@ -334,7 +346,7 @@ section.take-tour .university-description {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #ffffff;
+  color: var(--whiteMain);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 .another-choose-us aside .featured-card-info > p {
   font-size: 14px;
@@ -349,7 +361,7 @@ section.take-tour .university-description {
   font-size: 14px;
   line-height: 1.57;
   text-align: center;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 .which-you-prefer-section ul {
   display: flex; }
 .which-you-prefer-section ul > li > p {
@@ -357,8 +369,7 @@ section.take-tour .university-description {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  color: var(--whiteMain); }
 
 .our-great-customers h2 {
   font-weight: 700;
@@ -367,7 +378,7 @@ section.take-tour .university-description {
 .our-great-customers p {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 .our-great-customers p > strong {
   font-weight: 700;
   font-size: 12px;
@@ -398,7 +409,7 @@ section.take-tour .university-description {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.33;
-    color: #ffffff; }
+    color: var(--whiteMain); }
   .get-started h2 {
     font-weight: 700;
     font-size: 26px;
@@ -408,7 +419,7 @@ section.take-tour .university-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
-    color: #ffffff;
+    color: var(--whiteMain);
     width: 50%; }
   .get-started aside {
     width: 50%; }
@@ -416,21 +427,21 @@ section.take-tour .university-description {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.38;
-    color: #ffffff; }
+    color: var(--whiteMain); }
   .get-started aside > ul > li > p {
     font-size: 14px;
     line-height: 1.57;
-    color: #ffffff; }
+    color: var(--whiteMain); }
 
 .transparent-button {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: #ffffff;
+  color: var(--whiteMain);
   padding: 12px 20px;
   width: 142px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--whiteMain);
   border-radius: 22px; }
 
 .transparent-button:hover,
@@ -439,7 +450,7 @@ section.take-tour .university-description {
 
 .transparent-button:active {
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid #ffffff; }
+  border: 2px solid var(--whiteMain); }
 
 .latest-blog h2 {
   font-weight: 700;
@@ -460,7 +471,7 @@ section.take-tour .university-description {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: #000000; }
+  color: var(--blackMain); }
 .latest-blog ul > li > button {
   font-weight: 600;
   font-size: 16px;
@@ -470,7 +481,7 @@ section.take-tour .university-description {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 40px;
   height: 40px;
-  background: #ffffff;
+  background: var(--whiteMain);
   border-radius: 20px;
   padding: 8px; }
 .latest-blog ul > li > button:hover,
@@ -489,13 +500,13 @@ section.take-tour .university-description {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 
 .green-and-white-button {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: #ffffff;
+  color: var(--whiteMain);
   padding: 12px 20px;
   width: 109px;
   height: 40px;
@@ -513,7 +524,7 @@ section.take-tour .university-description {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: #ffffff;
+  color: var(--whiteMain);
   cursor: pointer; }
 
 .footer-info .footer-nav-expanded h3 {
@@ -523,12 +534,12 @@ section.take-tour .university-description {
 .footer-info .footer-nav-expanded ul > li > a {
   font-size: 14px;
   line-height: 1.57;
-  color: #5c5c5c; }
+  color: var(--greyText); }
 .footer-info .footer-nav-minimized ul > li > a {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  color: #5c5c5c;
+  color: var(--greyText);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 /*# sourceMappingURL=styles.css.map */
