@@ -377,6 +377,9 @@ section.take-tour .university-description {
     text-align: center;
     color: var(--whiteMain);
   }
+  ul > li > a:hover {
+    opacity: 0.7;
+  }
 }
 
 .our-great-customers {
