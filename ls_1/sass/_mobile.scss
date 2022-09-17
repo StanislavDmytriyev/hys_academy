@@ -15,11 +15,21 @@ button#hamburgerBtn {
   cursor: pointer;
 }
 
+button#hamburgerBtn:hover,
+button#hamburgerBtn:focus {
+  transform: scale(1.3);
+}
+
+button#hamburgerBtn:active {
+  color: var(--blackMain);
+}
+
 .main-logo:focus,
 .main-logo:hover {
   --color2: var(--blackMain);
 }
 
+// <!-- -=-=-=-=-=-STANDARD BUTTONS-=-=-=-=-=- -->
 .blue-button {
   background-color: var(--blueMain);
   font-weight: 700;
@@ -82,6 +92,28 @@ button#hamburgerBtn {
 .send-button:active {
   background: #4dda9d;
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+}
+
+.transparent-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--whiteMain);
+  padding: 12px 20px;
+  width: 142px;
+  height: 40px;
+  border: 1px solid var(--whiteMain);
+  border-radius: 22px;
+}
+
+.transparent-button:hover,
+.transparent-button:focus {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.transparent-button:active {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid var(--whiteMain);
 }
 
 // <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
@@ -166,33 +198,39 @@ button#hamburgerBtn {
   display: flex;
 }
 
-.popular-courses-section > h2 {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1;
-  text-align: center;
-  color: var(--blueMain);
-}
-
-.popular-courses-section > h3 {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
-  text-align: center;
-}
-
-.popular-courses-section h4 {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1;
-  color: var(--whiteMain);
-}
-
-.popular-courses-section p {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--whiteMain);
+.popular-courses-section {
+  h2 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    color: var(--blueMain);
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    text-align: center;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--whiteMain);
+  }
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--whiteMain);
+  }
+  ul > li > a:hover,
+  ul > li > a:focus {
+    opacity: 0.7;
+  }
+  ul > li > a:active {
+    opacity: 0.4;
+  }
 }
 
 .slick-prev {
@@ -375,6 +413,7 @@ section.take-tour .university-description {
   }
 }
 
+// <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
 .which-you-prefer-section {
   h2 {
     font-weight: 700;
@@ -397,11 +436,16 @@ section.take-tour .university-description {
     text-align: center;
     color: var(--whiteMain);
   }
-  ul > li > a:hover {
+  ul > li > a:hover,
+  ul > li > a:focus {
     opacity: 0.7;
+  }
+  ul > li > a:active {
+    opacity: 0.4;
   }
 }
 
+//  <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
 .our-great-customers {
   h2 {
     font-weight: 700;
@@ -421,6 +465,11 @@ section.take-tour .university-description {
   ul {
     display: flex;
   }
+  ul > li > button:hover,
+  ul > li > button:focus {
+    transform: scale(1.3);
+  }
+
   ul > li > button:active {
     --color3: #1b63f0;
   }
@@ -442,6 +491,7 @@ section.take-tour .university-description {
   border-radius: 16px 16px 0px 16px;
 }
 
+// <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
 .get-started {
   background-image: url(../img/background.png);
   display: flex;
@@ -478,30 +528,16 @@ section.take-tour .university-description {
     line-height: 1.57;
     color: var(--whiteMain);
   }
+  aside > ul > li > a:hover,
+  aside > ul > li > a:focus {
+    opacity: 0.7;
+  }
+  aside > ul > li > a:active {
+    opacity: 0.4;
+  }
 }
 
-.transparent-button {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--whiteMain);
-  padding: 12px 20px;
-  width: 142px;
-  height: 40px;
-  border: 1px solid var(--whiteMain);
-  border-radius: 22px;
-}
-
-.transparent-button:hover,
-.transparent-button:focus {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.transparent-button:active {
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid var(--whiteMain);
-}
-
+// <!-- -=-=-=-=-=-LATEST BLOG SECTION-=-=-=-=-=- -->
 .latest-blog {
   h2 {
     font-weight: 700;
@@ -526,6 +562,16 @@ section.take-tour .university-description {
     line-height: 1.33;
     color: var(--blackMain);
   }
+  ul > li > a:hover,
+  ul > li > a:focus {
+    opacity: 0.7;
+    color: var(--blueMain);
+  }
+  ul > li > a:active {
+    opacity: 0.4;
+    color: var(--blackMain);
+  }
+
   ul > li > button {
     font-weight: 600;
     font-size: 16px;
@@ -551,6 +597,7 @@ section.take-tour .university-description {
 
 #submit-form {
   input {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 0px 12px;
     width: 420px;
     height: 44px;
@@ -563,6 +610,7 @@ section.take-tour .university-description {
   }
 }
 
+// <!-- -=-=-=-=-=-FOOTER-=-=-=-=-=- -- >
 .footer-info {
   .footer-nav-expanded {
     h3 {
@@ -575,6 +623,14 @@ section.take-tour .university-description {
       line-height: 1.57;
       color: var(--greyText);
     }
+    ul > li > a:hover,
+    ul > li > a:focus {
+      color: var(--blueMain);
+    }
+    ul > li > a:active {
+      color: var(--blackMain);
+      opacity: 0.5;
+    }
   }
   .footer-nav-minimized {
     ul > li > a {
@@ -582,6 +638,14 @@ section.take-tour .university-description {
       font-size: 12px;
       line-height: 1.33;
       color: var(--greyText);
+    }
+    ul > li > a:hover,
+    ul > li > a:focus {
+      color: var(--blueMain);
+    }
+    ul > li > a:active {
+      color: var(--blackMain);
+      opacity: 0.5;
     }
   }
 }
