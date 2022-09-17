@@ -1,47 +1,12 @@
-$blueMain: #1b63f0; // EXPLORE BUTTON
-$blueButtonHover: #3d7fff; // BLUE BUTTON HOVER
-$blueButtonPressed: #175ee9; // BLUE BUTTON PRESSED
-
-$darkGreen: #42ae7f; // SECONDARY GREEN
-
-$greenMain: #64be97; // PRIMARY GREEN
-$greenVeryLight: #97f5cd; // GREEN BUTTON
-$greenButtonHover: #c0ffe4; // GREEN BUTTON HOVER
-$greenButtonPressed: #83ebbf; // GREEN BUTTON PRESSED
-
-$greyText: #5c5c5c; // SECONDARY TEXT COLOR
-
-$ratingStarGold: #fdd22f; // RATING STARS COLOR
-
-$bulletPointPink: #fde7e6; // MOBILE VERSION TAKE A TOUR SECTION
-
-$dateTimeMapGrey: #838383; // SMALL ICONS & TEXT IN WHY CHOOSE US SECTION
-
-$featuredBackgroundCream: #fff9f1; // WEIRD CREAMY COLOR
-
-$featured213DaysColor: #91a3ed; // 213 DAYS
-
-$featured23HoursColor: #f0c41b; // 23 HOURS
-
-$featured59MinColor: #fe5f60; // 59 MINUTES
-
-$graphicDesign: rgba(101, 131, 255, 0.8); // GRAPH DESIGN
-
-$backgroundSquare: #637af2; // STRANGE SQUARE SHAPE
-
-$quoteMarksPurple: #3f4c9a; // BIG STYLISH QUOTE MARKS
-
-$greenShapeStrange: #d6fae7; // WEIRD GREEN SHAPE
-
-$blueSliderDot: #bad1ff; // SLIDER DOT DEFAULT
-
-$backgroundGetStarted: rgba(69, 82, 156, 0.95); // GET STARTED BACKGROUND
-
-$latestBlogDesign: #5d74e4; // GAY DESIGN
-
-$formBackground: #f3f6fc; // FORM BACKGROUND
-
-$socialIcons: #25282b; // SOCIALS
-
-$blackBase: #000000; // BASIC BLACK
-$whiteBase: #ffffff; // BASIC WHITE
+:root {
+  --blueMain: #1b63f0;
+  --blueButtonHover: #3d7fff;
+  --blueButtonPressed: #175ee9;
+  --whiteMain: #ffffff;
+  --blackMain: #000000;
+  --greenMain: #64be97;
+  --greenButtonHover: #c0ffe4;
+  --greenButtonPressed: #83ebbf;
+  --greenVeryLight: #97f5cd;
+  --greyText: #5c5c5c;
+}

@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  color: $blackBase;
+  color: var(--blackMain);
   font-weight: 400;
   font-style: normal;
 }
@@ -8,7 +8,7 @@ body {
 button#hamburgerBtn {
   background: none;
   border: none;
-  color: $blueMain;
+  color: var(--blueMain);
   font-size: 24px;
   height: 24px;
   width: 24px;
@@ -17,11 +17,11 @@ button#hamburgerBtn {
 
 .main-logo:focus,
 .main-logo:hover {
-  --color2: $blackBase;
+  --color2: var(--blackMain);
 }
 
 .header-nav-link {
-  color: $whiteBase;
+  color: var(--whiteMain);
   font-size: 12px;
   line-height: 1.33;
   font-weight: 600;
@@ -33,27 +33,27 @@ button#hamburgerBtn {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  color: $blueMain;
+  color: var(--blueMain);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .blue-button {
-  background-color: $blueMain;
+  background-color: var(--blueMain);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
   padding: 12px 24px;
   border-radius: 22px;
 }
 
 .blue-button:hover,
 .blue-button:focus {
-  background-color: $blueButtonHover;
+  background-color: var(--blueButtonHover);
 }
 
 .blue-button:active {
-  background-color: $blueButtonPressed;
+  background-color: var(--blueButtonPressed);
 }
 
 .green-button {
@@ -61,19 +61,19 @@ button#hamburgerBtn {
   font-size: 12px;
   line-height: 1.33;
   padding: 12px 24px;
-  color: $blackBase;
-  background-color: $greenVeryLight;
+  color: var(--blackMain);
+  background-color: var(--greenVeryLight);
   padding: 12px 24px;
   border-radius: 22px;
 }
 
 .green-button:hover,
 .green-button:focus {
-  background-color: $greenButtonHover;
+  background-color: var(--greenButtonHover);
 }
 
 .green-button:active {
-  background-color: $greenButtonPressed;
+  background-color: var(--greenButtonPressed);
 }
 
 header > nav {
@@ -115,13 +115,13 @@ header > nav > ul {
 .choose-us-section p {
   font-size: 14px;
   line-height: 1.57;
-  color: $greyText;
+  color: var(--greyText);
 }
 
 .blue-line {
   width: 56px;
   height: 2px;
-  background-color: $blueMain;
+  background-color: var(--blueMain);
 }
 
 .pink-rectangular {
@@ -147,7 +147,7 @@ header > nav > ul {
   font-size: 12px;
   line-height: 1;
   text-align: center;
-  color: $blueMain;
+  color: var(--blueMain);
 }
 
 .popular-courses-section > h3 {
@@ -161,7 +161,7 @@ header > nav > ul {
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
-  color: $whiteBase;
+  color: var(--whiteMain);
 }
 
 .popular-courses-section p {
@@ -169,7 +169,7 @@ header > nav > ul {
   font-size: 16px;
   line-height: 1.5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: $whiteBase;
+  color: var(--whiteMain);
 }
 
 .slick-prev {
@@ -198,26 +198,26 @@ header > nav > ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
 }
 
 .price-discounted {
   font-size: 12px;
   line-height: 1.33;
   text-decoration-line: line-through;
-  color: $whiteBase;
+  color: var(--whiteMain);
 }
 
 .stars-counter {
   font-size: 12px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
 }
 
 .white-hor-line {
   width: 270px;
   height: 1px;
-  background-color: $whiteBase;
+  background-color: var(--whiteMain);
 }
 
 .take-tour > h2 {
@@ -230,13 +230,13 @@ section.take-tour .university-description {
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
-  color: $blueMain;
+  color: var(--blueMain);
 }
 
 .take-tour p {
   font-size: 14px;
   line-height: 1.57;
-  color: $greyText;
+  color: var(--greyText);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -253,7 +253,7 @@ section.take-tour .university-description {
   height: 40px;
 
   background: #64be97;
-  border: 2px solid $whiteBase;
+  border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px;
 }
@@ -263,7 +263,7 @@ section.take-tour .university-description {
   width: 40px;
   height: 40px;
   background: #64be97;
-  border: 2px solid $whiteBase;
+  border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
   border-radius: 20px;
   cursor: pointer;
@@ -295,7 +295,7 @@ section.take-tour .university-description {
   ul > li > p {
     font-size: 14px;
     line-height: 1.57;
-    color: $greyText;
+    color: var(--greyText);
   }
   aside {
     background-color: #fff9f1;
@@ -310,7 +310,7 @@ section.take-tour .university-description {
   aside > p {
     font-size: 14px;
     line-height: 1.57;
-    color: $greyText;
+    color: var(--greyText);
   }
   aside > .days > span {
     font-weight: 700;
@@ -341,7 +341,7 @@ section.take-tour .university-description {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: $whiteBase;
+    color: var(--whiteMain);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -362,7 +362,7 @@ section.take-tour .university-description {
     font-size: 14px;
     line-height: 1.57;
     text-align: center;
-    color: $greyText;
+    color: var(--greyText);
   }
   ul {
     display: flex;
@@ -372,7 +372,7 @@ section.take-tour .university-description {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: $whiteBase;
+    color: var(--whiteMain);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
@@ -386,7 +386,7 @@ section.take-tour .university-description {
   p {
     font-size: 14px;
     line-height: 1.57;
-    color: $greyText;
+    color: var(--greyText);
   }
   p > strong {
     font-weight: 700;
@@ -424,7 +424,7 @@ section.take-tour .university-description {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.33;
-    color: $whiteBase;
+    color: var(--whiteMain);
   }
   h2 {
     font-weight: 700;
@@ -436,7 +436,7 @@ section.take-tour .university-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
-    color: $whiteBase;
+    color: var(--whiteMain);
     width: 50%;
   }
   aside {
@@ -446,12 +446,12 @@ section.take-tour .university-description {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.38;
-    color: $whiteBase;
+    color: var(--whiteMain);
   }
   aside > ul > li > p {
     font-size: 14px;
     line-height: 1.57;
-    color: $whiteBase;
+    color: var(--whiteMain);
   }
 }
 
@@ -459,11 +459,11 @@ section.take-tour .university-description {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
   padding: 12px 20px;
   width: 142px;
   height: 40px;
-  border: 1px solid $whiteBase;
+  border: 1px solid var(--whiteMain);
   border-radius: 22px;
 }
 
@@ -474,7 +474,7 @@ section.take-tour .university-description {
 
 .transparent-button:active {
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid $whiteBase;
+  border: 2px solid var(--whiteMain);
 }
 
 .latest-blog {
@@ -500,7 +500,7 @@ section.take-tour .university-description {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.33;
-    color: $blackBase;
+    color: var(--blackMain);
   }
   ul > li > button {
     font-weight: 600;
@@ -511,7 +511,7 @@ section.take-tour .university-description {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 40px;
     height: 40px;
-    background: $whiteBase;
+    background: var(--whiteMain);
     border-radius: 20px;
     padding: 8px;
   }
@@ -536,7 +536,7 @@ section.take-tour .university-description {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: $greyText;
+    color: var(--greyText);
   }
 }
 
@@ -544,7 +544,7 @@ section.take-tour .university-description {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
   padding: 12px 20px;
   width: 109px;
   height: 40px;
@@ -563,7 +563,7 @@ section.take-tour .university-description {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
-  color: $whiteBase;
+  color: var(--whiteMain);
   cursor: pointer;
 }
 
@@ -577,7 +577,7 @@ section.take-tour .university-description {
     ul > li > a {
       font-size: 14px;
       line-height: 1.57;
-      color: $greyText;
+      color: var(--greyText);
     }
   }
   .footer-nav-minimized {
@@ -585,7 +585,7 @@ section.take-tour .university-description {
       font-weight: 600;
       font-size: 12px;
       line-height: 1.33;
-      color: $greyText;
+      color: var(--greyText);
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
