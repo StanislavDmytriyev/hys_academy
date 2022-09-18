@@ -227,9 +227,11 @@ button#hamburgerBtn:active {
   font-size: 16px;
   line-height: 1.5;
   color: var(--whiteMain); }
+.popular-courses-section ul > li > a > img {
+  border-radius: 8px; }
 .popular-courses-section ul > li > a:hover,
 .popular-courses-section ul > li > a:focus {
-  opacity: 0.7; }
+  box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4); }
 .popular-courses-section ul > li > a:active {
   opacity: 0.4; }
 .popular-courses-section ul > li > a > h4:after {
@@ -523,7 +525,10 @@ button#hamburgerBtn:active {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--greyText); }
+  color: var(--greyText);
+  border: none; }
+#submit-form input:focus {
+  border: 2px solid #1b63f0; }
 
 .footer-info .footer-nav-expanded h3 {
   font-weight: 700;
