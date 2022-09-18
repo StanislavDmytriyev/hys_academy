@@ -6,6 +6,20 @@ body {
   background-image: url(../img/background-mess.png);
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+.blue-line::after {
+  content: "";
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background-color: var(--blueMain);
+}
+
 button#hamburgerBtn {
   background: none;
   border: none;
@@ -165,18 +179,6 @@ button#hamburgerBtn:active {
 
 // <!-- -=-=-=-=-=-WHY CHOOSE US SECTION-=-=-=-=-=- -->
 .choose-us-section {
-  h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
-  }
   h3 {
     font-weight: 600;
     font-size: 16px;
@@ -299,18 +301,6 @@ button#hamburgerBtn:active {
     background: #eaedf4;
     border-radius: 50%;
   }
-  h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
-  }
   ul > li::before {
     content: "";
     display: block;
@@ -368,18 +358,6 @@ button#hamburgerBtn:active {
 
 // <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
 .another-choose-us {
-  h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
-  }
   ul > li > h3 {
     font-weight: 600;
     font-size: 16px;
@@ -446,18 +424,6 @@ button#hamburgerBtn:active {
 
 // <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
 .which-you-prefer-section {
-  h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
-  }
   p {
     font-size: 14px;
     line-height: 1.57;
@@ -489,9 +455,6 @@ button#hamburgerBtn:active {
   background-repeat: no-repeat;
 
   h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
     background-image: url(../img/bg-image-circle.png);
     background-repeat: no-repeat;
   }
@@ -502,13 +465,6 @@ button#hamburgerBtn:active {
     height: 344px;
     background: #637af2;
     border-radius: 24px;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
   }
   p {
     font-size: 14px;
@@ -544,9 +500,6 @@ button#hamburgerBtn:active {
     color: var(--whiteMain);
   }
   h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
     color: #64be97;
   }
   p {
@@ -581,18 +534,6 @@ button#hamburgerBtn:active {
 
 // <!-- -=-=-=-=-=-LATEST BLOG SECTION-=-=-=-=-=- -->
 .latest-blog {
-  h2 {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-  }
-  h2::after {
-    content: "";
-    display: inline-block;
-    width: 56px;
-    height: 2px;
-    background-color: var(--blueMain);
-  }
   ul > li > h3 {
     font-weight: 700;
     font-size: 12px;
