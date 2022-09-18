@@ -45,14 +45,19 @@ button#hamburgerBtn:active {
 }
 
 // <!-- -=-=-=-=-=-STANDARD BUTTONS-=-=-=-=-=- -->
-.blue-button {
-  background-color: var(--blueMain);
+.button {
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.33;
-  color: var(--whiteMain);
-  padding: 12px 24px;
   border-radius: 22px;
+  line-height: 1.33;
+  padding: 12px 24px;
+  color: var(--blackMain);
+  background-color: var(--greyText);
+}
+
+.blue-button {
+  background-color: var(--blueMain);
+  color: var(--whiteMain);
 }
 
 .blue-button:hover,
@@ -65,14 +70,8 @@ button#hamburgerBtn:active {
 }
 
 .green-button {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  padding: 12px 24px;
   color: var(--blackMain);
   background-color: var(--greenVeryLight);
-  padding: 12px 24px;
-  border-radius: 22px;
 }
 
 .green-button:hover,
@@ -85,15 +84,10 @@ button#hamburgerBtn:active {
 }
 
 .send-button {
-  padding: 12px 24px;
   width: 120px;
   height: 40px;
-  background: #64be97;
+  background-color: #64be97;
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
-  border-radius: 22px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
   color: var(--whiteMain);
   cursor: pointer;
 }
@@ -110,15 +104,12 @@ button#hamburgerBtn:active {
 }
 
 .transparent-button {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
   color: var(--whiteMain);
+  background: none;
   padding: 12px 20px;
   width: 142px;
   height: 40px;
   border: 1px solid var(--whiteMain);
-  border-radius: 22px;
 }
 
 .transparent-button:hover,
