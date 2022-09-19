@@ -3,7 +3,12 @@ body {
   color: var(--blackMain);
   font-weight: 400;
   font-style: normal;
-  background-image: url(../img/background-mess.png);
+  background-image: url(../img/hero-image.png), url(../img/header-bg-spot1.png),
+    url(../img/header-bg-spot2.png), url(../img/background-mess.png);
+  background-size: 100%, 95%, 100%, contain;
+  background-position-y: 3rem, 0rem, 0rem, 0rem;
+  background-position-x: right;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
 }
 
 h2 {
@@ -15,6 +20,7 @@ h2 {
 .blue-line::after {
   content: "";
   display: inline-block;
+  margin-left: 24px;
   width: 56px;
   height: 2px;
   background-color: var(--blueMain);
@@ -28,6 +34,7 @@ button#hamburgerBtn {
   height: 24px;
   width: 24px;
   cursor: pointer;
+  margin-right: 12px;
 }
 
 button#hamburgerBtn:hover,
@@ -132,17 +139,6 @@ header.header > nav ul {
 
 // <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
 .header {
-  background-image: url(../img/header-bg-spot1.png);
-  background-repeat: no-repeat;
-
-  nav {
-    background-image: url(../img/header-bg-spot2.png);
-    background-repeat: no-repeat;
-    display: flex;
-  }
-  nav > ul {
-    display: flex;
-  }
   .header-nav-link {
     color: var(--whiteMain);
     font-size: 12px;
@@ -155,17 +151,22 @@ header.header > nav ul {
   }
 }
 
-.hero-section > h1 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.22;
+// <!-- -=-=-=-=-=-HERO SECTION-=-=-=-=-=- -->
+
+.hero-section {
+  background-repeat: no-repeat;
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+  }
 }
 
-.hero-section > p {
-  font-size: 14px;
-  line-height: 1.57;
-}
-
+// <!-- -=-=-=-=-=-OUR CLIENTS SECTION-=-=-=-=-=- -->
 .our-clients {
   ul {
     display: flex;
@@ -188,9 +189,6 @@ header.header > nav ul {
     line-height: 1.57;
     color: var(--greyText);
   }
-  ul {
-    display: flex;
-  }
 }
 
 // <!-- -=-=-=-=-=-MOST POPULAR COURSES SECTION-=-=-=-=-=- -->
@@ -208,45 +206,114 @@ header.header > nav ul {
     line-height: 1.38;
     text-align: center;
   }
-  h4 {
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  ul > li.course-card {
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  ul > li > a {
+    display: inline-block;
+    background-color: none;
+  }
+
+  ul > li.course-card > a > img.portrait {
+    position: absolute;
+    left: 16px;
+    top: -22px;
+  }
+  ul > li.course-card > a > img.course-advert {
+    border-radius: 8px;
+  }
+  ul > li > a > h4 {
     font-weight: 500;
     font-size: 12px;
     line-height: 1;
     color: var(--whiteMain);
+    margin: 0 16px 0 16px;
+    position: absolute;
+    top: 243px;
   }
-  p {
+  ul > li > a > p.course-title {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     color: var(--whiteMain);
+    position: absolute;
+    top: 263px;
+    margin: 0 16px 0 16px;
   }
-  ul > li > a > img {
-    border-radius: 8px;
+  ul > li > a > p.course-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--whiteMain);
+    position: absolute;
+    top: 320px;
+    margin-left: 16px;
   }
-  ul > li > a:hover,
-  ul > li > a:focus {
-    box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4);
+  ul > li > a > p > span.price-discounted {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    text-decoration-line: line-through;
+    color: var(--whiteMain);
+    margin-left: 10px;
+    vertical-align: middle;
   }
-  ul > li > a:active {
-    opacity: 0.4;
+  ul > li > a > div.stars-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 324px;
+    right: 13px;
+    gap: 2px;
+  }
+  ul > li > a > div.stars-container > p.stars-counter {
+    margin-left: 4px;
   }
 
-  ul > li > a > h4:after {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 1px;
-    background-color: var(--whiteMain);
+  a:focus {
+    box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4);
   }
+}
+
+ul > li > a:hover,
+ul > li > a:focus {
+  box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4);
+}
+ul > li > a:active {
+  opacity: 0.4;
+}
+
+ul > li > a > h4:after {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 1px;
+  background-color: var(--whiteMain);
+  margin-top: 48px;
+  margin: 48px 0 0 -16px;
 }
 
 .slick-prev {
   transform: rotate(180deg);
   cursor: pointer;
+  display: block;
+  width: 100%;
 }
 
 .slick-next {
   cursor: pointer;
+  display: block;
+  width: 100%;
 }
 
 .slick-next:hover,
@@ -262,21 +329,6 @@ header.header > nav ul {
   --color1: #55b089;
 }
 
-.course-price {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33;
-  color: var(--whiteMain);
-}
-
-.price-discounted {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
-  text-decoration-line: line-through;
-  color: var(--whiteMain);
-}
-
 .popular-courses-section {
   ul > li .stars-counter {
     font-size: 12px;
@@ -287,9 +339,43 @@ header.header > nav ul {
 
 // <!-- -=-=-=-=-=-TAKE A TOUR SECTION-=-=-=-=-=- -->
 .take-tour {
+  .play {
+    padding: 6px 9px;
+    width: 40px;
+    height: 40px;
+    background: #64be97;
+    border: 2px solid var(--whiteMain);
+    box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 197px;
+    left: 169px;
+  }
+  .play:hover,
+  .play:focus {
+    border: none;
+    padding: 7px 10px;
+  }
+  .play:active {
+    background: #55b089;
+    box-shadow: none;
+    padding: 7px 10px;
+  }
+
+  div.video {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .take-tour-limitter {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
   p:nth-of-type(2)::before {
     content: "";
-    display: block;
+    display: none;
     width: 40px;
     height: 40px;
     background: #ffefef;
@@ -297,7 +383,7 @@ header.header > nav ul {
   }
   p:nth-of-type(2)::after {
     content: "";
-    display: block;
+    display: none;
     width: 32px;
     height: 32px;
     background: #eaedf4;
@@ -317,45 +403,13 @@ header.header > nav ul {
     font-size: 12px;
     line-height: 1;
     color: var(--blueMain);
+    margin-bottom: 6px;
   }
   p {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
   }
-}
-
-.play-button:hover,
-.play-button:focus {
-  width: 40px;
-  height: 40px;
-  background: #64be97;
-  border: 2px solid var(--whiteMain);
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
-  border-radius: 20px;
-}
-
-.play {
-  padding: 6px 9px;
-  width: 40px;
-  height: 40px;
-  background: #64be97;
-  border: 2px solid var(--whiteMain);
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.play:hover,
-.play:focus {
-  border: none;
-  padding: 7px 10px;
-}
-
-.play:active {
-  background: #55b089;
-  box-shadow: none;
-  padding: 7px 10px;
 }
 
 // <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
