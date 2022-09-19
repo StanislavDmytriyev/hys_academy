@@ -39,6 +39,14 @@ button#hamburgerBtn:active {
   color: var(--blackMain);
 }
 
+header.header > nav ul.open {
+  display: block;
+}
+
+header.header > nav ul {
+  display: none;
+}
+
 .main-logo:focus,
 .main-logo:hover {
   --color2: var(--blackMain);
