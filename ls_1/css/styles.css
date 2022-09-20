@@ -7,7 +7,8 @@
   box-sizing: border-box;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  outline: none; }
 
 a {
   text-decoration: none; }
@@ -561,7 +562,7 @@ ul > li > a > h4:after {
   background: #d6fae7;
   border-radius: 16px 16px 0px 16px; }
 
-#submit-form input {
+form input {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   padding: 0px 12px;
   width: 420px;
@@ -573,7 +574,9 @@ ul > li > a > h4:after {
   line-height: 1.14;
   color: var(--greyText);
   border: none; }
-#submit-form input:focus {
+form input:focus,
+form input:focus-visible,
+form input:hover {
   border: 2px solid #1b63f0; }
 
 .footer-info .footer-nav-expanded h3 {
