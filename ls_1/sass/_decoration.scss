@@ -17,6 +17,18 @@ h2 {
   line-height: 1.38;
 }
 
+.pink-dot:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #fde7e6;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
 .blue-line::after {
   content: "";
   display: inline-block;
@@ -303,11 +315,12 @@ ul > li > a > h4:after {
   margin: 48px 0 0 -16px;
 }
 
-.slick-prev {
+button.slick-prev {
   transform: rotate(180deg);
   cursor: pointer;
   display: block;
   width: 100%;
+  background-color: none;
 }
 
 .slick-next {
@@ -337,6 +350,11 @@ ul > li > a > h4:after {
   }
 }
 
+.limitter-327px {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 // <!-- -=-=-=-=-=-TAKE A TOUR SECTION-=-=-=-=-=- -->
 .take-tour {
   .play {
@@ -363,14 +381,12 @@ ul > li > a > h4:after {
     padding: 7px 10px;
   }
 
+  h2 {
+    margin-bottom: 24px;
+  }
   div.video {
     position: relative;
     margin-bottom: 40px;
-  }
-
-  .take-tour-limitter {
-    margin-left: 24px;
-    margin-right: 24px;
   }
 
   p:nth-of-type(2)::before {
@@ -389,14 +405,6 @@ ul > li > a > h4:after {
     background: #eaedf4;
     border-radius: 50%;
   }
-  ul > li::before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    background: #fde7e6;
-  }
 
   .university-description {
     font-weight: 500;
@@ -410,76 +418,159 @@ ul > li > a > h4:after {
     line-height: 1.57;
     color: var(--greyText);
   }
+  .pink-dot {
+    position: relative;
+
+    p {
+      margin-left: 36px;
+    }
+  }
+  ul {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+
+  .pink-dot p {
+    margin-bottom: 12px;
+  }
 }
 
 // <!-- -=-=-=-=-=-YET ANOTHER WHY CHOOSE US SECTION-=-=-=-=-=- -->
 .another-choose-us {
-  ul > li > h3 {
+  .conference-details {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  h2 {
+    margin-top: 132px;
+    margin-bottom: 32px;
+  }
+  h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 8px;
   }
-  ul > li > p {
+  p {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
+    margin-right: 24px;
   }
-  aside {
-    background-color: #fff9f1;
+  li {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--greyText);
   }
-  aside > .featured {
+
+  .featured {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 36px;
     line-height: 1.22;
     letter-spacing: 0.4em;
     color: #f6f2e9;
+    margin-left: -8px;
+    padding-top: 40px;
   }
   aside > p {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
   }
-  aside > .days > span {
+  .days > span {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     color: #91a3ed;
   }
-  aside > .hours > span {
+  .hours > span {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     color: #f0c41b;
   }
-  aside > .minutes > span {
+  .minutes > span {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     color: #fe5f60;
   }
-  aside > .featured-card > img {
+}
+aside {
+  background-color: #fff9f1;
+  padding-left: min(24px);
+}
+
+.featured-counter {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: right;
+  justify-content: flex-start;
+  gap: 28px;
+
+  span {
+    margin-right: 6px;
+  }
+}
+
+.featured-card {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px;
+  margin: 24px auto 52px;
+  img {
     border-radius: 8px;
   }
-  aside .featured-card-info {
-    background: rgba(0, 0, 0, 0.8);
-  }
-  aside .featured-card-info > h3 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--whiteMain);
-  }
+  .featured-card-info {
+    width: 280px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 224px;
+    left: 24px;
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: var(--whiteMain);
+    }
+    .featured-card-info-details {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding-left: 24px;
+      row-gap: 8px;
+      position: absolute;
 
-  aside .featured-card-info > p {
-    font-size: 14px;
-    line-height: 1.57;
-    color: #bfbfbf;
+      p {
+        font-size: 14px;
+        line-height: 1.57;
+        color: #bfbfbf;
+        margin-left: 8px;
+      }
+    }
   }
 }
 
 // <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
 .which-you-prefer-section {
+  margin-left: 24px;
+  margin-right: 24px;
+
+  h2 {
+    margin-top: 92px;
+    margin-bottom: 16px;
+    margin-right: 84px;
+  }
   p {
     font-size: 14px;
     line-height: 1.57;
