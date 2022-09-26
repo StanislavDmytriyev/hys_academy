@@ -86,22 +86,6 @@ table {
   --shadowLightBlueCarouselButtonHover: #e2edfb;
   --shadowLightBlueCourseCards: rgba(27, 99, 240, 0.4); }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  color: var(--blackMain);
-  font-weight: 400;
-  font-style: normal;
-  background-image: url(../img/hero-image.png), url(../img/header-bg-spot1.png), url(../img/header-bg-spot2.png), url(../img/background-mess.png);
-  background-size: 100%, 95%, 100%, contain;
-  background-position-y: 3rem, 0rem, 0rem, 0rem;
-  background-position-x: right;
-  background-repeat: no-repeat, no-repeat, no-repeat, repeat; }
-
-h2 {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38; }
-
 .pink-dot:before {
   content: "";
   display: block;
@@ -120,6 +104,63 @@ h2 {
   width: 56px;
   height: 2px;
   background-color: var(--blueMain); }
+
+.greyCircle::after {
+  content: "";
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: var(--greyDecorationCircle);
+  border-radius: 50%; }
+
+.pinkSquare::after {
+  content: "";
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: var(--pinkDecorationSquare);
+  border-radius: 8px; }
+
+.greenBackgroundCard::after {
+  content: "";
+  display: block;
+  width: 415px;
+  height: 264px;
+  background: var(--greenLightBackgroundCard);
+  border-radius: 16px 16px 0px 16px; }
+
+.whiteHorLine::after {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 1px;
+  background-color: var(--whiteMain);
+  margin-top: 48px;
+  margin: 48px 0 0 -16px; }
+
+.blueSquare::before {
+  content: "";
+  display: block;
+  width: 344px;
+  height: 344px;
+  background: var(--blueDecorationSquare);
+  border-radius: 24px; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--blackMain);
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/hero-image.png), url(../img/header-bg-spot1.png), url(../img/header-bg-spot2.png), url(../img/background-mess.png);
+  background-size: 100%, 95%, 100%, contain;
+  background-position-y: 3rem, 0rem, 0rem, 0rem;
+  background-position-x: right;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat; }
+
+h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38; }
 
 button#hamburgerBtn {
   background: none;
@@ -327,15 +368,6 @@ ul > li > a:focus {
 ul > li > a:active {
   opacity: 0.4; }
 
-ul > li > a > h4:after {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 1px;
-  background-color: var(--whiteMain);
-  margin-top: 48px;
-  margin: 48px 0 0 -16px; }
-
 button.slick-prev {
   transform: rotate(180deg);
   cursor: pointer;
@@ -393,20 +425,6 @@ button.slick-prev {
 .take-tour div.video {
   position: relative;
   margin-bottom: 40px; }
-.take-tour p:nth-of-type(2)::before {
-  content: "";
-  display: none;
-  width: 40px;
-  height: 40px;
-  background: var(--pinkDecorationSquare);
-  border-radius: 8px; }
-.take-tour p:nth-of-type(2)::after {
-  content: "";
-  display: none;
-  width: 32px;
-  height: 32px;
-  background: var(--greyDecorationCircle);
-  border-radius: 50%; }
 .take-tour .university-description {
   font-weight: 500;
   font-size: 12px;
@@ -558,13 +576,6 @@ aside {
   .our-great-customers h2 {
     background-image: url(../img/bg-image-circle.png);
     background-repeat: no-repeat; }
-  .our-great-customers h2::before {
-    content: "";
-    display: block;
-    width: 344px;
-    height: 344px;
-    background: var(--blueDecorationSquare);
-    border-radius: 24px; }
   .our-great-customers figure > blockquote > p {
     font-size: 14px;
     line-height: 1.57;
@@ -653,13 +664,6 @@ aside {
 .latest-blog ul > li > button:active {
   border: 1px solid var(--greenSendButton);
   box-shadow: none; }
-.latest-blog .blog-list > li:after {
-  content: "";
-  display: block;
-  width: 415px;
-  height: 264px;
-  background: var(--greenLightBackgroundCard);
-  border-radius: 16px 16px 0px 16px; }
 
 form input {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

@@ -17,27 +17,6 @@ h2 {
   line-height: 1.38;
 }
 
-.pink-dot:before {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background: var(--pinkDecorationDot);
-  position: absolute;
-  top: 8px;
-  left: 8px;
-}
-
-.blue-line::after {
-  content: "";
-  display: inline-block;
-  margin-left: 24px;
-  width: 56px;
-  height: 2px;
-  background-color: var(--blueMain);
-}
-
 button#hamburgerBtn {
   background: none;
   border: none;
@@ -305,16 +284,6 @@ ul > li > a:active {
   opacity: 0.4;
 }
 
-ul > li > a > h4:after {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 1px;
-  background-color: var(--whiteMain);
-  margin-top: 48px;
-  margin: 48px 0 0 -16px;
-}
-
 button.slick-prev {
   transform: rotate(180deg);
   cursor: pointer;
@@ -387,23 +356,6 @@ button.slick-prev {
   div.video {
     position: relative;
     margin-bottom: 40px;
-  }
-
-  p:nth-of-type(2)::before {
-    content: "";
-    display: none;
-    width: 40px;
-    height: 40px;
-    background: var(--pinkDecorationSquare);
-    border-radius: 8px;
-  }
-  p:nth-of-type(2)::after {
-    content: "";
-    display: none;
-    width: 32px;
-    height: 32px;
-    background: var(--greyDecorationCircle);
-    border-radius: 50%;
   }
 
   .university-description {
@@ -605,14 +557,6 @@ aside {
     background-image: url(../img/bg-image-circle.png);
     background-repeat: no-repeat;
   }
-  h2::before {
-    content: "";
-    display: block;
-    width: 344px;
-    height: 344px;
-    background: var(--blueDecorationSquare);
-    border-radius: 24px;
-  }
 
   figure > blockquote > p {
     font-size: 14px;
@@ -729,14 +673,6 @@ aside {
   ul > li > button:active {
     border: 1px solid var(--greenSendButton);
     box-shadow: none;
-  }
-  .blog-list > li:after {
-    content: "";
-    display: block;
-    width: 415px;
-    height: 264px;
-    background: var(--greenLightBackgroundCard);
-    border-radius: 16px 16px 0px 16px;
   }
 }
 
