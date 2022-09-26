@@ -56,13 +56,35 @@ table {
   --blueMain: #1b63f0;
   --blueButtonHover: #3d7fff;
   --blueButtonPressed: #175ee9;
+  --blueFeaturedDaysCounter: #91a3ed;
+  --blueLatestBlog: #5d74e4;
+  --blueDecorationSquare: #637af2;
   --whiteMain: #ffffff;
+  --whiteFeaturedCardText: #bfbfbf;
+  --whiteAsideBackground: #fff9f1;
+  --whiteInputFieldBackground: #f3f6fc;
   --blackMain: #000000;
   --greenMain: #64be97;
   --greenButtonHover: #c0ffe4;
   --greenButtonPressed: #83ebbf;
   --greenVeryLight: #97f5cd;
-  --greyText: #5c5c5c; }
+  --greenSendButton: #64be97;
+  --greenSendButtonHover: #25de8e;
+  --greenSendButtonActive: #4dda9d;
+  --greenSlickButtonActive: #55b089;
+  --greenLightBackgroundCard: #d6fae7;
+  --greyText: #5c5c5c;
+  --greyTransparentButton: rgba(255, 255, 255, 0.15);
+  --greyDecorationCircle: #eaedf4;
+  --beigeFeaturedBackground: #f6f2e9;
+  --goldenFeaturedHoursCounter: #f0c41b;
+  --redFeaturedMinutesCounter: #fe5f60;
+  --pinkDecorationDot: #fde7e6;
+  --pinkDecorationSquare: #ffefef;
+  --shadowGreenPlayButton: rgba(75, 202, 103, 0.56);
+  --shadowGreenSendButtonHover: rgba(52, 210, 142, 0.58);
+  --shadowLightBlueCarouselButtonHover: #e2edfb;
+  --shadowLightBlueCourseCards: rgba(27, 99, 240, 0.4); }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -86,7 +108,7 @@ h2 {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background: #fde7e6;
+  background: var(--pinkDecorationDot);
   position: absolute;
   top: 8px;
   left: 8px; }
@@ -160,19 +182,19 @@ header.header > nav ul {
 .send-button {
   width: 120px;
   height: 40px;
-  background-color: #64be97;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  background-color: var(--greenSendButton);
+  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
   color: var(--whiteMain);
   cursor: pointer; }
 
 .send-button:hover,
 .send-button:focus {
-  background: #25de8e;
-  box-shadow: 0px 10px 16px 4px rgba(52, 210, 142, 0.58); }
+  background: var(--greenSendButtonHover);
+  box-shadow: 0px 10px 16px 4px var(--shadowGreenSendButtonHover); }
 
 .send-button:active {
-  background: #4dda9d;
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58); }
+  background: var(--greenSendButtonActive);
+  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton); }
 
 .transparent-button {
   color: var(--whiteMain);
@@ -184,10 +206,10 @@ header.header > nav ul {
 
 .transparent-button:hover,
 .transparent-button:focus {
-  background: rgba(255, 255, 255, 0.15); }
+  background: var(--greyTransparentButton); }
 
 .transparent-button:active {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain); }
 
 .header .header-nav-link {
@@ -296,11 +318,11 @@ header.header > nav ul {
 .popular-courses-section ul > li > a > div.stars-container > p.stars-counter {
   margin-left: 4px; }
 .popular-courses-section a:focus {
-  box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4); }
+  box-shadow: 0px 6px 20px var(--shadowLightBlueCourseCards); }
 
 ul > li > a:hover,
 ul > li > a:focus {
-  box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4); }
+  box-shadow: 0px 6px 20px var(--shadowLightBlueCourseCards); }
 
 ul > li > a:active {
   opacity: 0.4; }
@@ -330,12 +352,12 @@ button.slick-prev {
 .slick-next:focus,
 .slick-prev:hover,
 .slick-prev:focus {
-  --color1: #64be97;
-  --color4: #fff; }
+  --color1: var(--greenMain);
+  --color4: var(--whiteMain); }
 
 .slick-next:active,
 .slick-prev:active {
-  --color1: #55b089; }
+  --color1: var(--greenSlickButtonActive); }
 
 .popular-courses-section ul > li .stars-counter {
   font-size: 12px;
@@ -350,9 +372,9 @@ button.slick-prev {
   padding: 6px 9px;
   width: 40px;
   height: 40px;
-  background: #64be97;
+  background: var(--greenMain);
   border: 2px solid var(--whiteMain);
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.56);
+  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
   border-radius: 20px;
   cursor: pointer;
   position: absolute;
@@ -363,7 +385,7 @@ button.slick-prev {
   border: none;
   padding: 7px 10px; }
 .take-tour .play:active {
-  background: #55b089;
+  background: var(--greenSlickButtonActive);
   box-shadow: none;
   padding: 7px 10px; }
 .take-tour h2 {
@@ -376,14 +398,14 @@ button.slick-prev {
   display: none;
   width: 40px;
   height: 40px;
-  background: #ffefef;
+  background: var(--pinkDecorationSquare);
   border-radius: 8px; }
 .take-tour p:nth-of-type(2)::after {
   content: "";
   display: none;
   width: 32px;
   height: 32px;
-  background: #eaedf4;
+  background: var(--greyDecorationCircle);
   border-radius: 50%; }
 .take-tour .university-description {
   font-weight: 500;
@@ -433,7 +455,7 @@ button.slick-prev {
   font-size: 36px;
   line-height: 1.22;
   letter-spacing: 0.4em;
-  color: #f6f2e9;
+  color: var(--beigeFeaturedBackground);
   margin-left: -8px;
   padding-top: 40px; }
 .another-choose-us aside > p {
@@ -444,20 +466,20 @@ button.slick-prev {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: #91a3ed; }
+  color: var(--blueFeaturedDaysCounter); }
 .another-choose-us .hours > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: #f0c41b; }
+  color: var(--goldenFeaturedHoursCounter); }
 .another-choose-us .minutes > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
-  color: #fe5f60; }
+  color: var(--redFeaturedMinutesCounter); }
 
 aside {
-  background-color: #fff9f1;
+  background-color: var(--whiteAsideBackground);
   padding-left: 24px; }
 
 .featured-counter {
@@ -501,7 +523,7 @@ aside {
       .featured-card .featured-card-info .featured-card-info-details p {
         font-size: 14px;
         line-height: 1.57;
-        color: #bfbfbf;
+        color: var(--whiteFeaturedCardText);
         margin-left: 8px; }
 
 .which-you-prefer-section {
@@ -541,7 +563,7 @@ aside {
     display: block;
     width: 344px;
     height: 344px;
-    background: #637af2;
+    background: var(--blueDecorationSquare);
     border-radius: 24px; }
   .our-great-customers figure > blockquote > p {
     font-size: 14px;
@@ -557,7 +579,7 @@ aside {
   .our-great-customers ul > li > button:focus {
     transform: scale(1.3); }
   .our-great-customers ul > li > button:active {
-    --color3: #1b63f0; }
+    --color3: var(--blueMain); }
 
 .get-started {
   background-image: url(../img/background.png);
@@ -568,7 +590,7 @@ aside {
     line-height: 1.33;
     color: var(--whiteMain); }
   .get-started h2 {
-    color: #64be97; }
+    color: var(--greenSendButton); }
   .get-started p {
     font-weight: 400;
     font-size: 14px;
@@ -597,7 +619,7 @@ aside {
   font-size: 12px;
   line-height: 1.33;
   text-align: center;
-  color: #5d74e4; }
+  color: var(--blueLatestBlog); }
 .latest-blog ul > li > h4 {
   font-weight: 600;
   font-size: 16px;
@@ -619,7 +641,7 @@ aside {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #5d74e4;
+  color: var(--blueLatestBlog);
   width: 40px;
   height: 40px;
   background: var(--whiteMain);
@@ -627,16 +649,16 @@ aside {
   padding: 8px; }
 .latest-blog ul > li > button:hover,
 .latest-blog button:focus {
-  box-shadow: 0px 4px 16px #e2edfb; }
+  box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover; }
 .latest-blog ul > li > button:active {
-  border: 1px solid #64be97;
+  border: 1px solid var(--greenSendButton);
   box-shadow: none; }
 .latest-blog .blog-list > li:after {
   content: "";
   display: block;
   width: 415px;
   height: 264px;
-  background: #d6fae7;
+  background: var(--greenLightBackgroundCard);
   border-radius: 16px 16px 0px 16px; }
 
 form input {
@@ -644,7 +666,7 @@ form input {
   padding: 0px 12px;
   width: 420px;
   height: 44px;
-  background: #f3f6fc;
+  background: var(--whiteInputFieldBackground);
   border-radius: 22px;
   font-weight: 500;
   font-size: 14px;
@@ -654,7 +676,7 @@ form input {
 form input:focus,
 form input:focus-visible,
 form input:hover {
-  border: 2px solid #1b63f0; }
+  border: 2px solid var(--blueMain); }
 
 .footer-info .footer-nav-expanded h3 {
   font-weight: 700;
