@@ -146,6 +146,15 @@ table {
   background: var(--blueDecorationSquare);
   border-radius: 24px; }
 
+.header .header-nav-link {
+  color: var(--whiteMain);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600; }
+.header .header-nav-link:hover,
+.header .header-nav-link:focus {
+  color: var(--blueMain); }
+
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--blackMain);
@@ -252,15 +261,6 @@ header.header > nav ul {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain); }
-
-.header .header-nav-link {
-  color: var(--whiteMain);
-  font-size: 12px;
-  line-height: 1.33;
-  font-weight: 600; }
-.header .header-nav-link:hover,
-.header .header-nav-link:focus {
-  color: var(--blueMain); }
 
 .hero-section {
   background-repeat: no-repeat; }

@@ -128,20 +128,6 @@ header.header > nav ul {
   border: 2px solid var(--whiteMain);
 }
 
-// <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
-.header {
-  .header-nav-link {
-    color: var(--whiteMain);
-    font-size: 12px;
-    line-height: 1.33;
-    font-weight: 600;
-  }
-  .header-nav-link:hover,
-  .header-nav-link:focus {
-    color: var(--blueMain);
-  }
-}
-
 // <!-- -=-=-=-=-=-HERO SECTION-=-=-=-=-=- -->
 
 .hero-section {
