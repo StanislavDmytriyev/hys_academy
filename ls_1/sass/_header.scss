@@ -1,13 +1,43 @@
 // <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
-.header {
-  .header-nav-link {
-    color: var(--whiteMain);
-    font-size: 12px;
-    line-height: 1.33;
-    font-weight: 600;
-  }
-  .header-nav-link:hover,
-  .header-nav-link:focus {
-    color: var(--blueMain);
-  }
+.header-nav-link {
+  color: var(--whiteMain);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--blueMain);
+}
+
+.header-navigation > ul.open {
+  display: block;
+}
+
+.header-navigation > ul {
+  display: none;
+}
+
+.main-logo:focus,
+.main-logo:hover {
+  --color2: var(--blackMain);
+}
+
+// HAMBURGER BUTTON ALL STATES
+button#hamburgerBtn {
+  background: none;
+  border: none;
+  color: var(--blueMain);
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+button#hamburgerBtn:hover,
+button#hamburgerBtn:focus {
+  transform: scale(1.3);
+}
+button#hamburgerBtn:active {
+  color: var(--blackMain);
 }
