@@ -1,16 +1,16 @@
 header.header {
   margin: 24px 0 360px 0;
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  nav > a.button.blue-button {
-    margin-left: auto;
-  }
-  .blue-button {
-    margin-right: 8px;
-  }
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-navigation > a.button.blue-button {
+  margin-left: auto;
+  margin-right: 8px;
 }
 
 .header-nav-link {

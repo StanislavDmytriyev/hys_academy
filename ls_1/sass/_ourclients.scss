@@ -1,0 +1,12 @@
+.our-clients {
+  margin: 0 24px 80px 23px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul > li > a > img:hover {
+    opacity: 0.7;
+    transform: scale(1.3);
+  }
+}

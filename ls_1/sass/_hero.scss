@@ -1,5 +1,7 @@
-.hero-section {
+section.hero-section {
   background-repeat: no-repeat;
+  margin-bottom: 54px;
+
   h1 {
     font-weight: 700;
     font-size: 36px;
@@ -10,10 +12,12 @@
   p {
     font-size: 14px;
     line-height: 1.57;
-    margin-bottom: 40px;
+    margin-bottom: 52px;
+    padding-right: 30px;
   }
 
   a.button.blue-button {
-    margin-right: 24px;
+    margin-right: 20px;
+    margin-bottom: 45px;
   }
 }
