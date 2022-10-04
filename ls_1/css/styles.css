@@ -106,6 +106,14 @@ table {
   height: 2px;
   background-color: var(--blueMain); }
 
+.blue-line-far-away::after {
+  content: "";
+  display: inline-block;
+  text-align: right;
+  width: 56px;
+  height: 2px;
+  background-color: var(--blueMain); }
+
 .greyCircle::after {
   content: "";
   display: none;
@@ -304,6 +312,32 @@ aside {
         color: var(--whiteFeaturedCardText);
         margin-left: 8px; }
 
+.which-you-prefer-section {
+  margin-left: 24px;
+  margin-right: 24px; }
+  .which-you-prefer-section h2 {
+    margin-top: 92px;
+    margin-bottom: 16px;
+    margin-right: 84px; }
+  .which-you-prefer-section p {
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+    color: var(--greyText); }
+  .which-you-prefer-section ul {
+    display: flex; }
+  .which-you-prefer-section ul > li > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--whiteMain); }
+  .which-you-prefer-section ul > li > a:hover,
+  .which-you-prefer-section ul > li > a:focus {
+    opacity: 0.7; }
+  .which-you-prefer-section ul > li > a:active {
+    opacity: 0.4; }
+
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--blackMain);
@@ -317,6 +351,18 @@ body {
   margin: 0 auto;
   max-width: 1440px; }
 
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px; } }
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1024px;
+    padding: 0 10px; } }
 h2 {
   font-weight: 700;
   font-size: 26px;
@@ -560,32 +606,6 @@ button.slick-prev {
   margin-bottom: 36px; }
 .take-tour .pink-dot p {
   margin-bottom: 12px; }
-
-.which-you-prefer-section {
-  margin-left: 24px;
-  margin-right: 24px; }
-  .which-you-prefer-section h2 {
-    margin-top: 92px;
-    margin-bottom: 16px;
-    margin-right: 84px; }
-  .which-you-prefer-section p {
-    font-size: 14px;
-    line-height: 1.57;
-    text-align: center;
-    color: var(--greyText); }
-  .which-you-prefer-section ul {
-    display: flex; }
-  .which-you-prefer-section ul > li > p {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--whiteMain); }
-  .which-you-prefer-section ul > li > a:hover,
-  .which-you-prefer-section ul > li > a:focus {
-    opacity: 0.7; }
-  .which-you-prefer-section ul > li > a:active {
-    opacity: 0.4; }
 
 .our-great-customers {
   background-image: url(../img/weird-spots.png);

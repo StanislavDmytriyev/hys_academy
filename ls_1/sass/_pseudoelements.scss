@@ -19,6 +19,15 @@
   background-color: var(--blueMain);
 }
 
+.blue-line-far-away::after {
+  content: "";
+  display: inline-block;
+  text-align: right;
+  width: 56px;
+  height: 2px;
+  background-color: var(--blueMain);
+}
+
 .greyCircle::after {
   content: "";
   display: none;
