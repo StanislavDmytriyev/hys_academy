@@ -102,7 +102,7 @@ table {
   content: "";
   display: inline-block;
   margin-left: 24px;
-  width: 56px;
+  width: 60px;
   height: 2px;
   background-color: var(--blueMain); }
 
@@ -221,23 +221,26 @@ section.hero-section {
     margin-right: 20px;
     margin-bottom: 45px; }
 
-.our-clients {
-  margin: 0 24px 80px 23px; }
-  .our-clients ul {
-    display: flex;
-    flex-wrap: wrap; }
-  .our-clients ul > li > a > img:hover {
-    opacity: 0.7;
-    transform: scale(1.3); }
+.our-clients .clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+  gap: 20px; }
+.our-clients .clients-list a:hover,
+.our-clients .clients-list a:focus {
+  --color12: var(--blueMain); }
 
-.choose-us-section {
+.clients-google {
+  margin-right: -5px; }
+
+.our-features {
   width: 100%;
   padding-left: 24px; }
-  .choose-us-section h3 {
+  .our-features h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5; }
-  .choose-us-section p {
+  .our-features p {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
@@ -550,13 +553,6 @@ section.popular-courses-section h3 {
   margin-left: 4px; }
 .popular-courses-section a:focus {
   box-shadow: 0px 6px 20px var(--shadowLightBlueCourseCards); }
-
-ul > li > a:hover,
-ul > li > a:focus {
-  box-shadow: 0px 6px 20px var(--shadowLightBlueCourseCards); }
-
-ul > li > a:active {
-  opacity: 0.4; }
 
 button.slick-prev {
   transform: rotate(180deg);
