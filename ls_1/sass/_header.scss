@@ -1,4 +1,18 @@
-// <!-- -=-=-=-=-=-HEADER-=-=-=-=-=- -- >
+header.header {
+  margin: 24px 0 360px 0;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  nav > a.button.blue-button {
+    margin-left: auto;
+  }
+  .blue-button {
+    margin-right: 8px;
+  }
+}
+
 .header-nav-link {
   color: var(--whiteMain);
   font-size: 12px;

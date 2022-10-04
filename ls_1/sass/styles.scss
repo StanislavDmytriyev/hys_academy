@@ -2,18 +2,10 @@
 @import "variables";
 @import "pseudoelements";
 @import "header";
+@import "hero";
+
 @import "whychooseusupper";
 @import "whychooseuslower";
 @import "whichonedoyouprefer";
 
 @import "decoration";
-
-@import "mobile";
-
-@media only screen and (min-width: 768px) {
-  @import "tablet";
-}
-
-@media only screen and (min-width: 1400px) {
-  @import "desktop";
-}

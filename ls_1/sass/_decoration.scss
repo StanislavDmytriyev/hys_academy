@@ -11,6 +11,8 @@ body {
   background-repeat: no-repeat, no-repeat, repeat;
   margin: 0 auto;
   max-width: 1440px;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -44,7 +46,7 @@ h2 {
   font-size: 12px;
   border-radius: 22px;
   line-height: 1.33;
-  padding: 12px 24px;
+  padding: 12px 20px;
   color: var(--blackMain);
   background-color: var(--greyText);
 }
@@ -114,21 +116,6 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain);
-}
-
-// <!-- -=-=-=-=-=-HERO SECTION-=-=-=-=-=- -->
-
-.hero-section {
-  background-repeat: no-repeat;
-  h1 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.22;
-  }
-  p {
-    font-size: 14px;
-    line-height: 1.57;
-  }
 }
 
 // <!-- -=-=-=-=-=-OUR CLIENTS SECTION-=-=-=-=-=- -->
@@ -537,5 +524,53 @@ form {
   .social-networks-contacts:active {
     --color33: var(--blackMain);
     opacity: 0.5;
+  }
+}
+
+//   <!-- -=-=-=-=-=-OUR CLIENTS SECTION-=-=-=-=-=- -->
+section.our-clients {
+  margin: 0 24px 80px 23px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+//   <!-- -=-=-=-=-=-WHY CHOOSE US SECTION-=-=-=-=-=- -->
+section.choose-us-section {
+  h2 {
+    margin-bottom: 56px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul > li {
+    svg {
+      margin-bottom: 16px;
+    }
+    h3 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+//   <!-- -=-=-=-=-=-MOST POPULAR COURSES SECTION-=-=-=-=-=- -->
+section.popular-courses-section {
+  h2 {
+    margin-bottom: 6px;
+  }
+  h3 {
+    margin-bottom: 32px;
   }
 }
