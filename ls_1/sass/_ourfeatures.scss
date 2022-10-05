@@ -1,13 +1,34 @@
-// <!-- -=-=-=-=-=-WHY CHOOSE US SECTION-=-=-=-=-=- -->
-.our-features {
-  width: 100%;
-  padding-left: 24px;
-  h3 {
+section.our-features {
+  margin-bottom: 80px;
+
+  .our-features-header {
+    margin-bottom: 56px;
+  }
+
+  .our-features-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-features-list > li {
+    text-align: center;
+  }
+
+  .our-features-icon {
+    margin-bottom: 16px;
+  }
+
+  .our-features-name {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 6px;
   }
-  p {
+
+  .our-features-description {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
@@ -15,5 +36,6 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 20px;
   }
 }
