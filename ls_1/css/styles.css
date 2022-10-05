@@ -163,11 +163,12 @@ header.header {
   display: flex;
   align-items: center;
   position: fixed;
-  width: 100%; }
+  z-index: 5;
+  width: calc(100vw - 48px); }
 
 .header-navigation > a.button.blue-button {
   margin-left: auto;
-  margin-right: 80px; }
+  align-self: flex-end; }
 
 .header-nav-link {
   color: var(--whiteMain);
@@ -294,12 +295,14 @@ section.popular-courses-section {
 .left-slick-button-position {
   position: absolute;
   left: 9px;
-  top: 255px; }
+  top: 255px;
+  z-index: 5; }
 
 .right-slick-button-position {
   position: absolute;
   right: 9px;
-  top: 258px; }
+  top: 258px;
+  z-index: 5; }
 
 .course-card {
   flex-shrink: 0;
@@ -316,12 +319,10 @@ section.popular-courses-section {
   margin-left: 0px; }
 
 .course-card02 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/course-cards/course-002.png);
-  display: none; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/course-cards/course-002.png); }
 
 .course-card03 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/course-cards/course-003.png);
-  display: none; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/course-cards/course-003.png); }
 
 .course-link {
   display: inline-block;
@@ -400,29 +401,45 @@ section.take-tour {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden; }
-  section.take-tour h2 {
-    margin-bottom: 24px; }
-  section.take-tour div.video {
-    position: relative;
-    margin-bottom: 40px; }
-  section.take-tour .university-description {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1;
-    color: var(--blueMain);
-    margin-bottom: 6px; }
-  section.take-tour p {
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--greyText); }
-  section.take-tour .pink-dot {
-    position: relative; }
-    section.take-tour .pink-dot p {
-      margin-left: 36px; }
-  section.take-tour ul {
+
+.video {
+  margin-left: -24px;
+  position: relative;
+  margin-bottom: 40px; }
+
+.play-button {
+  position: absolute;
+  left: 169px;
+  top: 197px; }
+
+.take-tour-aside {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-right: 24px; }
+
+h2 {
+  margin-bottom: 24px; }
+
+.university-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--blueMain);
+  margin-bottom: 6px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText); }
+
+.pink-dot {
+  position: relative; }
+  .pink-dot p {
+    margin-left: 36px; }
+  .pink-dot ul {
     margin-top: 12px;
     margin-bottom: 36px; }
-  section.take-tour .pink-dot p {
+  .pink-dot .pink-dot p {
     margin-bottom: 12px; }
 
 .another-choose-us .why-choose-us-lower {
@@ -587,7 +604,7 @@ h2 {
   font-size: 26px;
   line-height: 1.38; }
 
-.play {
+.play-button {
   padding: 6px 9px;
   width: 40px;
   height: 40px;
@@ -595,17 +612,14 @@ h2 {
   border: 2px solid var(--whiteMain);
   box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
   border-radius: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 197px;
-  left: 169px; }
+  cursor: pointer; }
 
-.play:hover,
-.play:focus {
+.play-button:hover,
+.play-button:focus {
   border: none;
   padding: 7px 10px; }
 
-.play:active {
+.play-button:active {
   background: var(--greenSlickButtonActive);
   box-shadow: none;
   padding: 7px 10px; }

@@ -33,11 +33,13 @@ section.popular-courses-section {
   position: absolute;
   left: 9px;
   top: 255px;
+  z-index: 5;
 }
 .right-slick-button-position {
   position: absolute;
   right: 9px;
   top: 258px;
+  z-index: 5;
 }
 
 //   <!-- -=-=-=-=-=-COURSE CARD-=-=-=-=-=- -->
@@ -59,12 +61,10 @@ section.popular-courses-section {
 .course-card02 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/course-cards/course-002.png);
-  display: none;
 }
 .course-card03 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/course-cards/course-003.png);
-  display: none;
 }
 .course-link {
   display: inline-block;
