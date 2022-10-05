@@ -101,7 +101,8 @@ table {
 .blue-line::after {
   content: "";
   display: inline-block;
-  margin-left: 24px;
+  margin-left: 25px;
+  padding-bottom: 3px;
   width: 60px;
   height: 2px;
   background-color: var(--blueMain); }
@@ -402,7 +403,7 @@ section.take-tour {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
-  margin-bottom: 112px; }
+  margin-bottom: 113px; }
 
 .video {
   margin-left: -24px;
@@ -454,28 +455,42 @@ section.take-tour {
   line-height: 1.57;
   color: var(--greyText); }
 
-.why-choose-us-section .conference-details {
+.why-choose-us-section {
+  margin-bottom: 10px; }
+
+.why-choose-us-section-header {
+  margin-bottom: 32px; }
+
+.conference-list-item {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 8px; }
-  .why-choose-us-section .conference-details svg {
-    margin-right: 8px; }
-.why-choose-us-section h2 {
-  margin-bottom: 32px; }
-.why-choose-us-section h3 {
+  row-gap: 8px;
+  column-gap: 25px;
+  padding-bottom: 24px;
+  margin-bottom: 41px;
+  border-bottom: 1px solid var(--greyText); }
+
+.conference-name {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5; }
-.why-choose-us-section p {
+  line-height: 1.5;
+  margin-bottom: 7px; }
+
+.conference-details-technical-container {
+  display: flex;
+  align-items: center; }
+
+.conference-schedule {
+  color: var(--greyTextNewestEdition);
   font-size: 14px;
   line-height: 1.57;
-  color: var(--greyText);
-  margin-right: 24px; }
-.why-choose-us-section li {
-  padding-bottom: 24px;
-  margin-bottom: 40px;
-  border-bottom: 1px solid var(--greyText); }
-.why-choose-us-section .featured {
+  display: inline-block;
+  vertical-align: middle; }
+
+.conference-details-icon {
+  margin-right: 8px; }
+
+.featured {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
@@ -483,21 +498,25 @@ section.take-tour {
   color: var(--beigeFeaturedBackground);
   margin-left: -8px;
   padding-top: 40px; }
-.why-choose-us-section aside > p {
+
+aside > p {
   font-size: 14px;
   line-height: 1.57;
   color: var(--greyText); }
-.why-choose-us-section .days > span {
+
+.days > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   color: var(--blueFeaturedDaysCounter); }
-.why-choose-us-section .hours > span {
+
+.hours > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   color: var(--goldenFeaturedHoursCounter); }
-.why-choose-us-section .minutes > span {
+
+.minutes > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
