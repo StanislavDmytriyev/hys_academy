@@ -168,6 +168,7 @@ header.header {
 
 .header-navigation > a.button.blue-button {
   margin-left: auto;
+  margin-right: 8px;
   align-self: flex-end; }
 
 .header-nav-link {
@@ -400,12 +401,13 @@ section.take-tour {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 112px; }
 
 .video {
   margin-left: -24px;
   position: relative;
-  margin-bottom: 40px; }
+  margin-bottom: 38px; }
 
 .play-button {
   position: absolute;
@@ -415,9 +417,10 @@ section.take-tour {
 .take-tour-aside {
   margin-left: -24px;
   margin-right: -24px;
-  padding-right: 24px; }
+  padding-right: 24px;
+  margin-bottom: 20px; }
 
-h2 {
+.take-tour-section-header {
   margin-bottom: 24px; }
 
 .university-description {
@@ -427,47 +430,52 @@ h2 {
   color: var(--blueMain);
   margin-bottom: 6px; }
 
-p {
+.take-tour-description {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText);
+  display: block;
+  margin-bottom: 12px; }
+
+.second-chapter {
+  margin-bottom: 14px; }
+
+.pink-dots-technical-list {
+  margin-bottom: 33px; }
+
+.pink-dot {
+  position: relative; }
+
+.pink-dot-list-description {
+  margin-left: 36px;
+  margin-bottom: 12px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
   color: var(--greyText); }
 
-.pink-dot {
-  position: relative; }
-  .pink-dot p {
-    margin-left: 36px; }
-  .pink-dot ul {
-    margin-top: 12px;
-    margin-bottom: 36px; }
-  .pink-dot .pink-dot p {
-    margin-bottom: 12px; }
-
-.another-choose-us .why-choose-us-lower {
-  padding-left: 24px;
-  padding-right: 24px; }
-.another-choose-us .conference-details {
+.why-choose-us-section .conference-details {
   display: flex;
   flex-wrap: wrap;
   row-gap: 8px; }
-  .another-choose-us .conference-details svg {
+  .why-choose-us-section .conference-details svg {
     margin-right: 8px; }
-.another-choose-us h2 {
-  margin-top: 132px;
+.why-choose-us-section h2 {
   margin-bottom: 32px; }
-.another-choose-us h3 {
+.why-choose-us-section h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5; }
-.another-choose-us p {
+.why-choose-us-section p {
   font-size: 14px;
   line-height: 1.57;
   color: var(--greyText);
   margin-right: 24px; }
-.another-choose-us li {
+.why-choose-us-section li {
   padding-bottom: 24px;
   margin-bottom: 40px;
   border-bottom: 1px solid var(--greyText); }
-.another-choose-us .featured {
+.why-choose-us-section .featured {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
@@ -475,21 +483,21 @@ p {
   color: var(--beigeFeaturedBackground);
   margin-left: -8px;
   padding-top: 40px; }
-.another-choose-us aside > p {
+.why-choose-us-section aside > p {
   font-size: 14px;
   line-height: 1.57;
   color: var(--greyText); }
-.another-choose-us .days > span {
+.why-choose-us-section .days > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   color: var(--blueFeaturedDaysCounter); }
-.another-choose-us .hours > span {
+.why-choose-us-section .hours > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   color: var(--goldenFeaturedHoursCounter); }
-.another-choose-us .minutes > span {
+.why-choose-us-section .minutes > span {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
