@@ -1,19 +1,4 @@
-// <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
 .which-you-prefer-section {
-  margin-left: 24px;
-  margin-right: 24px;
-
-  h2 {
-    margin-top: 92px;
-    margin-bottom: 16px;
-    margin-right: 84px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 1.57;
-    text-align: center;
-    color: var(--greyText);
-  }
   ul {
     display: flex;
   }
@@ -30,5 +15,60 @@
   }
   ul > li > a:active {
     opacity: 0.4;
+  }
+}
+
+.which-one-you-prefer-section-header {
+  margin-bottom: 16px;
+}
+
+.which-one-you-prefer-section-description {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: var(--greyText);
+  margin-bottom: 21px;
+}
+
+.courses-carousel-filter {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  background: var(--whiteInputFieldBackground);
+  color: var(--greyText);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 22px;
+  margin: 0 auto 21px auto;
+  select {
+    background: var(--whiteInputFieldBackground);
+    color: inherit;
+    font-family: inherit;
+  }
+  option {
+    width: 148px;
+    height: 20px;
+    background: var(--whiteInputFieldBackground);
+    color: inherit;
+    font-family: inherit;
+  }
+}
+
+.courses-carousel-filter:active {
+  border: 1px solid var(--blueMain);
+}
+.courses-carousel-filter:disabled {
+  border: 1px solid #c6c6ca;
+  select {
+    color: #c6c6c6;
+  }
+  option {
+    color: #c6c6c6;
   }
 }
