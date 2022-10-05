@@ -37,7 +37,14 @@
   margin-right: 8px;
 }
 
-.featured {
+// <!-- -=-=-=-=-=-FEATURED ASIDE BLOCK-=-=-=-=-=- -->
+.featured-aside {
+  margin-left: -24px;
+  margin-right: -24px;
+  background-color: var(--whiteAsideBackground);
+  padding-left: 24px;
+}
+.featured-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
@@ -46,10 +53,22 @@
   margin-left: -8px;
   padding-top: 40px;
 }
-aside > p {
-  font-size: 14px;
-  line-height: 1.57;
-  color: var(--greyText);
+.featured-counter {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: right;
+  justify-content: flex-start;
+  gap: 28px;
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--greyText);
+  }
+  span {
+    margin-right: 6px;
+  }
 }
 .days > span {
   font-weight: 700;
@@ -69,33 +88,14 @@ aside > p {
   line-height: 1.33;
   color: var(--redFeaturedMinutesCounter);
 }
-aside {
-  background-color: var(--whiteAsideBackground);
-  padding-left: 24px;
-}
-
-.featured-counter {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 100%;
-  justify-content: right;
-  justify-content: flex-start;
-  gap: 28px;
-
-  span {
-    margin-right: 6px;
-  }
-}
 
 .featured-card {
   display: inline-block;
   position: relative;
   border-radius: 8px;
   margin: 24px auto 52px;
-  img {
-    border-radius: 8px;
-  }
+  background: url(../img/course-cards/obsolete-course-01.jpg);
+
   .featured-card-info {
     width: 280px;
     height: 156px;
