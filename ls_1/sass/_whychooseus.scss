@@ -1,5 +1,5 @@
-.why-choose-us-section {
-  margin-bottom: 10px;
+section.why-choose-us-section {
+  margin-bottom: 90px;
 }
 
 .why-choose-us-section-header {
@@ -52,22 +52,21 @@
   color: var(--beigeFeaturedBackground);
   margin-left: -8px;
   padding-top: 40px;
+  margin-bottom: 40px;
 }
 .featured-counter {
+  margin-bottom: 24px;
   display: flex;
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 100%;
-  justify-content: right;
-  justify-content: flex-start;
-  gap: 28px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 47px;
   p {
     font-size: 14px;
     line-height: 1.57;
     color: var(--greyText);
   }
   span {
-    margin-right: 6px;
+    margin-right: 3px;
   }
 }
 .days > span {
@@ -90,43 +89,52 @@
 }
 
 .featured-card {
-  display: inline-block;
+  height: 380px;
+  width: 328px;
   position: relative;
   border-radius: 8px;
-  margin: 24px auto 52px;
-  background: url(../img/course-cards/obsolete-course-01.jpg);
+  background: url(../img/featured-card.png);
+  margin-bottom: 52px;
+}
+.featured-card-info {
+  width: 280px;
+  height: 156px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 224px;
+  left: 24px;
+  padding: 24px 16px 0 16px;
+}
 
-  .featured-card-info {
-    width: 280px;
-    height: 156px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 224px;
-    left: 24px;
-    padding-top: 24px;
-    padding-left: 16px;
-    h3 {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1.5;
-      text-align: center;
-      color: var(--whiteMain);
-    }
-    .featured-card-info-details {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      row-gap: 8px;
-      position: absolute;
-      margin-top: 16px;
+.featured-event-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--whiteMain);
+  margin-bottom: 16px;
+}
 
-      p {
-        font-size: 14px;
-        line-height: 1.57;
-        color: var(--whiteFeaturedCardText);
-        margin-left: 8px;
-      }
-    }
+.featured-card-info-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  column-gap: 24px;
+  row-gap: 7px;
+  margin-left: -16px;
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--whiteFeaturedCardText);
   }
+}
+
+.featured-card-info-details-technical-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
