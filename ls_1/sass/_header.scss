@@ -1,16 +1,18 @@
 header.header {
   margin: 24px 0 360px 0;
+  height: 40px;
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
 }
 
 .header-navigation > a.button.blue-button {
   margin-left: auto;
-  margin-right: 8px;
+  margin-right: 80px;
 }
 
 .header-nav-link {

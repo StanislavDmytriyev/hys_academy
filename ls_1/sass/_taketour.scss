@@ -1,0 +1,42 @@
+section.take-tour {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+  div.video {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .university-description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--blueMain);
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--greyText);
+  }
+  .pink-dot {
+    position: relative;
+
+    p {
+      margin-left: 36px;
+    }
+  }
+  ul {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+
+  .pink-dot p {
+    margin-bottom: 12px;
+  }
+}

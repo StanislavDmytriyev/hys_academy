@@ -40,6 +40,32 @@ h2 {
   line-height: 1.38;
 }
 
+// <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
+.play {
+  padding: 6px 9px;
+  width: 40px;
+  height: 40px;
+  background: var(--greenMain);
+  border: 2px solid var(--whiteMain);
+  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 197px;
+  left: 169px;
+}
+.play:hover,
+.play:focus {
+  border: none;
+  padding: 7px 10px;
+}
+.play:active {
+  background: var(--greenSlickButtonActive);
+  box-shadow: none;
+  padding: 7px 10px;
+}
+
 // <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
 // <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
 button.slick-prev {
@@ -149,69 +175,6 @@ button.slick-prev {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain);
-}
-
-// <!-- -=-=-=-=-=-TAKE A TOUR SECTION-=-=-=-=-=- -->
-.take-tour {
-  .play {
-    padding: 6px 9px;
-    width: 40px;
-    height: 40px;
-    background: var(--greenMain);
-    border: 2px solid var(--whiteMain);
-    box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
-    border-radius: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 197px;
-    left: 169px;
-  }
-  .play:hover,
-  .play:focus {
-    border: none;
-    padding: 7px 10px;
-  }
-  .play:active {
-    background: var(--greenSlickButtonActive);
-    box-shadow: none;
-    padding: 7px 10px;
-  }
-
-  h2 {
-    margin-bottom: 24px;
-  }
-  div.video {
-    position: relative;
-    margin-bottom: 40px;
-  }
-
-  .university-description {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1;
-    color: var(--blueMain);
-    margin-bottom: 6px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--greyText);
-  }
-  .pink-dot {
-    position: relative;
-
-    p {
-      margin-left: 36px;
-    }
-  }
-  ul {
-    margin-top: 12px;
-    margin-bottom: 36px;
-  }
-
-  .pink-dot p {
-    margin-bottom: 12px;
-  }
 }
 
 //  <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
@@ -341,7 +304,7 @@ form {
   input {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 0px 12px;
-    width: 420px;
+    width: 90vw;
     height: 44px;
     background: var(--whiteInputFieldBackground);
     border-radius: 22px;
