@@ -1,6 +1,6 @@
 section.popular-courses-section {
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 63px;
 }
 .popular-courses-section-header {
   font-weight: 500;
@@ -23,7 +23,7 @@ section.popular-courses-section {
   display: flex;
   justify-content: center;
 }
-.courses-list {
+.popular-courses-list {
   display: flex;
   overflow-x: auto;
   gap: 20px;
@@ -58,10 +58,8 @@ section.popular-courses-section {
   box-shadow: 0px 6px 20px rgba(27, 99, 240, 0.4);
 }
 .course-card01 {
-  margin-left: -70px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/course-cards/course-001.png);
-  margin-left: 0px;
 }
 .course-card02 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),

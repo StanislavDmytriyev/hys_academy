@@ -1,5 +1,5 @@
 section.which-you-prefer-section {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .which-one-you-prefer-section-header {
@@ -57,25 +57,82 @@ section.which-you-prefer-section {
 }
 
 .prefer__courses__slider {
-  
+  padding: 0 48px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.prefer__courses__slider__left__button,
+.prefer__courses__slider__right__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prefer__courses__slider__left__button {
+  left: -1px;
+}
+.prefer__courses__slider__right__button {
+  right: -1px;
+}
+.prefer__courses__list {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+  gap: 20px;
 }
 
-.which-you-prefer-section {
-  ul {
-    display: flex;
-  }
-  ul > li > p {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--whiteMain);
-  }
-  ul > li > a:hover,
-  ul > li > a:focus {
-    opacity: 0.7;
-  }
-  ul > li > a:active {
-    opacity: 0.4;
-  }
+.preferred__course__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 197px;
+  height: 197px;
+  box-shadow: 0px 7px 20px #e2edfb;
+  border-radius: 4px;
+}
+.preferred01 {
+  background: linear-gradient(
+      0deg,
+      rgba(101, 131, 255, 0.8),
+      rgba(101, 131, 255, 0.8)
+    ),
+    url(../img/preferred-courses-cards/preferred01.png);
+}
+.preferred02 {
+  background: linear-gradient(
+      0deg,
+      rgba(240, 199, 45, 0.8),
+      rgba(240, 199, 45, 0.8)
+    ),
+    url(../img/preferred-courses-cards/preferred02.png);
+}
+.preferred03 {
+  background: linear-gradient(
+      0deg,
+      rgba(148, 87, 243, 0.8),
+      rgba(148, 87, 243, 0.8)
+    ),
+    url(../img/preferred-courses-cards/preferred03.png);
+}
+.preferred04 {
+  background: linear-gradient(
+      0deg,
+      rgba(254, 95, 96, 0.8),
+      rgba(254, 95, 96, 0.8)
+    ),
+    url(../img/preferred-courses-cards/preferred04.png);
+}
+.preferred__course__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--whiteMain);
+}
+
+.preferred__link:hover,
+.preferred__link:focus {
+  opacity: 0.7;
 }
