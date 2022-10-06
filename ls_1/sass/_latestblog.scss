@@ -1,0 +1,52 @@
+section.latest-blog {
+  padding-top: 80px;
+  ul > li > h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--blueLatestBlog);
+  }
+  ul > li > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  ul > li > a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--blackMain);
+  }
+  ul > li > a:hover,
+  ul > li > a:focus {
+    opacity: 0.7;
+    color: var(--blueMain);
+  }
+  ul > li > a:active {
+    opacity: 0.4;
+    color: var(--blackMain);
+  }
+
+  ul > li > button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--blueLatestBlog);
+    width: 40px;
+    height: 40px;
+    background: var(--whiteMain);
+    border-radius: 20px;
+    padding: 8px;
+  }
+  ul > li > button:hover,
+  button:focus {
+    box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover;
+  }
+
+  ul > li > button:active {
+    border: 1px solid var(--greenSendButton);
+    box-shadow: none;
+  }
+}

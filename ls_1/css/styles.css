@@ -672,6 +672,126 @@ section.our-great-customers {
 .carousel__scroll__button:active {
   --color3: var(--blueMain); }
 
+section.get__started {
+  background-image: url(../img/background.png);
+  display: flex;
+  flex-direction: column; }
+
+.get-started-slogan {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--whiteMain);
+  padding-top: 40px; }
+
+.get__started__section__header {
+  color: var(--greenVeryLight);
+  padding-top: 8px;
+  padding-bottom: 24px; }
+
+.get__started__description__box {
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  justify-content: space-between;
+  margin-bottom: 32px; }
+
+.get__started__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--whiteMain); }
+
+.get__started__buttons__box {
+  display: flex;
+  width: 275px;
+  justify-content: space-between; }
+
+.get__started__quickLink__block {
+  padding-top: 55px; }
+
+.get__started__quickLink__technical__box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 23px; }
+
+.get__started__quickLink__subheader {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  color: var(--whiteMain); }
+
+.get__started__quickLinks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-bottom: 40px; }
+
+.get__started__quickLinks__list__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 12px; }
+
+.quick__link__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--whiteMain); }
+
+.quick__link:hover,
+.quick__link:focus {
+  opacity: 0.7; }
+
+.quick__link:active {
+  opacity: 0.4; }
+
+.quick__link__technical__box {
+  display: flex;
+  align-items: center;
+  gap: 13px; }
+
+section.latest-blog {
+  padding-top: 80px; }
+  section.latest-blog ul > li > h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--blueLatestBlog); }
+  section.latest-blog ul > li > h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5; }
+  section.latest-blog ul > li > a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--blackMain); }
+  section.latest-blog ul > li > a:hover,
+  section.latest-blog ul > li > a:focus {
+    opacity: 0.7;
+    color: var(--blueMain); }
+  section.latest-blog ul > li > a:active {
+    opacity: 0.4;
+    color: var(--blackMain); }
+  section.latest-blog ul > li > button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--blueLatestBlog);
+    width: 40px;
+    height: 40px;
+    background: var(--whiteMain);
+    border-radius: 20px;
+    padding: 8px; }
+  section.latest-blog ul > li > button:hover,
+  section.latest-blog button:focus {
+    box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover; }
+  section.latest-blog ul > li > button:active {
+    border: 1px solid var(--greenSendButton);
+    box-shadow: none; }
+
 section.which-you-prefer-section {
   padding-bottom: 63px; }
 
@@ -876,6 +996,11 @@ h2 {
   color: var(--blackMain);
   background-color: var(--greyText); }
 
+.transparent-button {
+  color: var(--whiteMain);
+  background: none;
+  border: 1px solid var(--whiteMain); }
+
 .blue-button {
   background-color: var(--blueMain);
   color: var(--whiteMain); }
@@ -915,14 +1040,6 @@ h2 {
   background: var(--greenSendButtonActive);
   box-shadow: 0px 4px 16px var(--shadowGreenPlayButton); }
 
-.transparent-button {
-  color: var(--whiteMain);
-  background: none;
-  padding: 12px 20px;
-  width: 142px;
-  height: 40px;
-  border: 1px solid var(--whiteMain); }
-
 .transparent-button:hover,
 .transparent-button:focus {
   background: var(--greyTransparentButton); }
@@ -930,79 +1047,6 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain); }
-
-.get-started {
-  background-image: url(../img/background.png);
-  display: flex; }
-  .get-started .get-started-slogan {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.33;
-    color: var(--whiteMain); }
-  .get-started h2 {
-    color: var(--greenSendButton); }
-  .get-started p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--whiteMain);
-    width: 50%; }
-  .get-started aside {
-    width: 50%; }
-  .get-started aside > p {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.38;
-    color: var(--whiteMain); }
-  .get-started aside > ul > li > p {
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--whiteMain); }
-  .get-started aside > ul > li > a:hover,
-  .get-started aside > ul > li > a:focus {
-    opacity: 0.7; }
-  .get-started aside > ul > li > a:active {
-    opacity: 0.4; }
-
-.latest-blog ul > li > h3 {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  text-align: center;
-  color: var(--blueLatestBlog); }
-.latest-blog ul > li > h4 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5; }
-.latest-blog ul > li > a {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.33;
-  color: var(--blackMain); }
-.latest-blog ul > li > a:hover,
-.latest-blog ul > li > a:focus {
-  opacity: 0.7;
-  color: var(--blueMain); }
-.latest-blog ul > li > a:active {
-  opacity: 0.4;
-  color: var(--blackMain); }
-.latest-blog ul > li > button {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--blueLatestBlog);
-  width: 40px;
-  height: 40px;
-  background: var(--whiteMain);
-  border-radius: 20px;
-  padding: 8px; }
-.latest-blog ul > li > button:hover,
-.latest-blog button:focus {
-  box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover; }
-.latest-blog ul > li > button:active {
-  border: 1px solid var(--greenSendButton);
-  box-shadow: none; }
 
 form input {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
