@@ -433,10 +433,12 @@
       <!-- -=-=-=-=-=-WHICH ONE DO YOU PREFER SECTION-=-=-=-=-=- -->
       <!-- -=-=-=-=-=-_whichonedoyouprefer.scss-=-=-=-=-=- -->
       <section class="which-you-prefer-section container">
-        <h2 class="which-one-you-prefer-section-header blue-line">
-          Which one do <br />
-          you prefer?
-        </h2>
+        <div class="tech__blueLineEnd">
+          <h2 class="which-one-you-prefer-section-header">
+            Which one do you prefer?
+          </h2>
+          <div class="blue-line"></div>
+        </div>
         <p class="which-one-you-prefer-section-description">
           Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
           veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -497,64 +499,80 @@
         </div>
       </section>
       <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
+      <!-- -=-=-=-=-=-_ourgreatcustomers.scss-=-=-=-=-=- -->
       <section class="our-great-customers container">
-        <h2 class="blue-line">Our great customers</h2>
-        <img
-          src="./img/working-at-pc.jpg"
-          width="344"
-          alt="ladies working with a laptop"
-        />
-        <svg width="39" height="31">
-          <use href="./img/sprite.svg#icon-quotemark"></use>
-        </svg>
-        <figure>
-          <blockquote>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque Laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-          </blockquote>
-          <figcaption><p>Stephanie Magion</p></figcaption>
-        </figure>
-        <ul>
-          <li>
-            <button type="button" class="slick-next">
-              <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+        <div class="great__customers__picture__block">
+          <img
+            class="great__customers__picture__image"
+            src="./img/work-PC-small.png"
+            alt="ladies working with a laptop"
+          />
+        </div>
+        <div class="great__customers__text__block">
+          <div class="tech__blueLineEnd">
+            <h2 class="great__customers__section__header">
+              Our great customers
+            </h2>
+            <div class="blue-line"></div>
+          </div>
+          <figure class="great__customers__card">
+            <div class="quotemark">
+              <svg width="45" height="35">
+                <use href="./img/sprite.svg#icon-quotemark"></use>
               </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">
-              <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="slick-next active">
-              <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">
-              <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
-              </svg>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">
-              <svg width="10" height="10">
-                <use href="./img/sprite.svg#icon-slick-dot-default"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
+            </div>
+            <blockquote class="great__customers__card__description">
+              <p class="great__customers__card__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque
+              </p>
+              <p class="great__customers__card__text">
+                Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </blockquote>
+            <figcaption class="quote__author">
+              <p>Stephanie Magion</p>
+            </figcaption>
+          </figure>
+          <ul class="carousel__buttons">
+            <li>
+              <button type="button" class="carousel__scroll__button">
+                <svg width="10" height="10">
+                  <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="carousel__scroll__button">
+                <svg width="10" height="10">
+                  <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="carousel__scroll__button active">
+                <svg width="10" height="10">
+                  <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="carousel__scroll__button">
+                <svg width="10" height="10">
+                  <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="carousel__scroll__button">
+                <svg width="10" height="10">
+                  <use href="./img/sprite.svg#icon-slick-dot-default"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
       <section class="get-started container">

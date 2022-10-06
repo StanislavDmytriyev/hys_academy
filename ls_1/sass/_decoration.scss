@@ -34,6 +34,11 @@ body {
   }
 }
 
+.tech__blueLineEnd {
+  display: flex;
+  align-items: flex-end;
+}
+
 h2 {
   font-weight: 700;
   font-size: 26px;
@@ -176,33 +181,6 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain);
-}
-
-//  <!-- -=-=-=-=-=-OUR GREAT CUSTOMERS SECTION-=-=-=-=-=- -->
-.our-great-customers {
-  background-image: url(../img/weird-spots.png);
-  background-repeat: no-repeat;
-
-  figure > blockquote > p {
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--greyText);
-  }
-  figure > figcaption > p {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.33;
-  }
-  ul {
-    display: flex;
-  }
-  ul > li > button:hover,
-  ul > li > button:focus {
-    transform: scale(1.3);
-  }
-  ul > li > button:active {
-    --color3: var(--blueMain);
-  }
 }
 
 // <!-- -=-=-=-=-=-READY TO GET STARTED SECTION-=-=-=-=-=- -->
@@ -367,34 +345,5 @@ form {
   .social-networks-contacts:active {
     --color33: var(--blackMain);
     opacity: 0.5;
-  }
-}
-
-//   <!-- -=-=-=-=-=-WHY CHOOSE US SECTION-=-=-=-=-=- -->
-section.choose-us-section {
-  h2 {
-    margin-bottom: 56px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
-  ul > li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  ul > li {
-    svg {
-      margin-bottom: 16px;
-    }
-    h3 {
-      margin-bottom: 6px;
-    }
-    p {
-      margin-bottom: 20px;
-      text-align: center;
-    }
   }
 }
