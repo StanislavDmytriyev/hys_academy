@@ -2,8 +2,11 @@ section.our-great-customers {
   display: flex;
   flex-direction: column;
   padding-top: 63px;
-  //   background-image: url(../img/weird-spots.png);
-  //   background-repeat: no-repeat;
+  background-image: url(../img/weird-spots.png);
+  background-repeat: no-repeat;
+  background-position-x: 42%;
+  background-position-y: 108%;
+  background-size: 144%;
 }
 
 .great__customers__picture__block {
