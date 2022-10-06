@@ -156,8 +156,9 @@ table {
   border-radius: 24px; }
 
 header.header {
-  margin: 24px 0 360px 0;
-  height: 40px; }
+  height: 40px;
+  padding-top: 24px;
+  padding-bottom: 401px; }
 
 .header-navigation {
   display: flex;
@@ -210,65 +211,75 @@ button#hamburgerBtn:active {
 
 section.hero-section {
   background-repeat: no-repeat;
-  margin-bottom: 54px; }
+  padding-bottom: 55px; }
   section.hero-section h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.22;
-    margin-bottom: 32px; }
+    padding-bottom: 32px; }
   section.hero-section p {
     font-size: 14px;
     line-height: 1.57;
-    margin-bottom: 52px;
+    padding-bottom: 50px;
     padding-right: 30px; }
   section.hero-section a.button.blue-button {
     margin-right: 20px;
     margin-bottom: 45px; }
 
-.our-clients .clients-list {
+section.our-clients {
+  padding-bottom: 44px; }
+
+.clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 46px;
   gap: 20px; }
-.our-clients .clients-list a:hover,
-.our-clients .clients-list a:focus {
+
+.clients-list a:hover,
+.clients-list a:focus {
   --color12: var(--blueMain); }
 
 .clients-google {
   margin-right: -5px; }
 
 section.our-features {
-  margin-bottom: 60px; }
-  section.our-features .our-features-header {
-    margin-bottom: 56px; }
-  section.our-features .our-features-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; }
-  section.our-features .our-features-list > li {
-    text-align: center; }
-  section.our-features .our-features-icon {
-    margin-bottom: 16px; }
-  section.our-features .our-features-name {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 6px; }
-  section.our-features .our-features-description {
-    font-size: 14px;
-    line-height: 1.57;
-    color: var(--greyText);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 20px; }
+  padding-bottom: 60px; }
+
+.our-features-header {
+  padding-bottom: 55px; }
+
+.our-features-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.our-features-list > li {
+  text-align: center; }
+
+.our-features-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  padding-top: 15px; }
+
+.our-features-description {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 18px; }
+
+.our-features-description.extraSpaceBelow {
+  margin-bottom: 40px; }
 
 section.popular-courses-section {
   position: relative;
-  margin-bottom: 60px; }
+  padding-bottom: 60px; }
 
 .popular-courses-section-header {
   font-weight: 500;
@@ -285,7 +296,7 @@ section.popular-courses-section {
   text-align: center;
   margin-bottom: 32px; }
 
-.courses__slider {
+.popular__courses__slider {
   padding: 0 32px;
   position: relative;
   display: flex;
@@ -592,19 +603,8 @@ section.why-choose-us-section {
   align-items: center;
   gap: 8px; }
 
-.which-you-prefer-section ul {
-  display: flex; }
-.which-you-prefer-section ul > li > p {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--whiteMain); }
-.which-you-prefer-section ul > li > a:hover,
-.which-you-prefer-section ul > li > a:focus {
-  opacity: 0.7; }
-.which-you-prefer-section ul > li > a:active {
-  opacity: 0.4; }
+section.which-you-prefer-section {
+  padding-bottom: 10px; }
 
 .which-one-you-prefer-section-header {
   margin-bottom: 16px; }
@@ -652,6 +652,20 @@ section.why-choose-us-section {
     color: #c6c6c6; }
   .courses-carousel-filter:disabled option {
     color: #c6c6c6; }
+
+.which-you-prefer-section ul {
+  display: flex; }
+.which-you-prefer-section ul > li > p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--whiteMain); }
+.which-you-prefer-section ul > li > a:hover,
+.which-you-prefer-section ul > li > a:focus {
+  opacity: 0.7; }
+.which-you-prefer-section ul > li > a:active {
+  opacity: 0.4; }
 
 body {
   font-family: "Montserrat", sans-serif;

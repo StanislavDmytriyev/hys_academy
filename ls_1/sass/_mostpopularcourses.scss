@@ -1,6 +1,6 @@
 section.popular-courses-section {
   position: relative;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 .popular-courses-section-header {
   font-weight: 500;
@@ -17,7 +17,7 @@ section.popular-courses-section {
   text-align: center;
   margin-bottom: 32px;
 }
-.courses__slider {
+.popular__courses__slider {
   padding: 0 32px;
   position: relative;
   display: flex;

@@ -1,21 +1,5 @@
-.which-you-prefer-section {
-  ul {
-    display: flex;
-  }
-  ul > li > p {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--whiteMain);
-  }
-  ul > li > a:hover,
-  ul > li > a:focus {
-    opacity: 0.7;
-  }
-  ul > li > a:active {
-    opacity: 0.4;
-  }
+section.which-you-prefer-section {
+  padding-bottom: 10px;
 }
 
 .which-one-you-prefer-section-header {
@@ -59,7 +43,6 @@
     font-family: inherit;
   }
 }
-
 .courses-carousel-filter:active {
   border: 1px solid var(--blueMain);
 }
@@ -70,5 +53,29 @@
   }
   option {
     color: #c6c6c6;
+  }
+}
+
+.prefer__courses__slider {
+  
+}
+
+.which-you-prefer-section {
+  ul {
+    display: flex;
+  }
+  ul > li > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--whiteMain);
+  }
+  ul > li > a:hover,
+  ul > li > a:focus {
+    opacity: 0.7;
+  }
+  ul > li > a:active {
+    opacity: 0.4;
   }
 }
