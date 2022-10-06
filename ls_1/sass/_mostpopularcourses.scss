@@ -17,30 +17,30 @@ section.popular-courses-section {
   text-align: center;
   margin-bottom: 32px;
 }
-.courses-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  gap: 20px;
-  scroll-snap-type: x mandatory;
-  width: 100%;
-}
 .courses__slider {
   padding: 0 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-.left-slick-button-position {
-  position: absolute;
-  left: 9px;
-  top: 255px;
-  z-index: 5;
+.courses-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 100%;
 }
+.left-slick-button-position,
 .right-slick-button-position {
   position: absolute;
-  right: 9px;
-  top: 258px;
-  z-index: 5;
+  top: 50%;
+  transform: translateY(-75%);
+}
+.left-slick-button-position {
+  left: -15px;
+}
+.right-slick-button-position {
+  right: -15px;
 }
 
 //   <!-- -=-=-=-=-=-COURSE CARD-=-=-=-=-=- -->

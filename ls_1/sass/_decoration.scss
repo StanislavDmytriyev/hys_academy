@@ -65,7 +65,7 @@ h2 {
 
 // <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
 // <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
-button.slick-prev {
+.slick-prev {
   transform: rotate(180deg);
   cursor: pointer;
   display: block;
@@ -73,6 +73,7 @@ button.slick-prev {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 4px 16px #e2edfb;
   border-radius: 20px;
+  height: 40px;
 }
 
 .slick-next {
@@ -80,6 +81,9 @@ button.slick-prev {
   display: block;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 16px #e2edfb;
+  border-radius: 20px;
+  height: 40px;
 }
 
 .slick-next:hover,
