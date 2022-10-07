@@ -22,6 +22,9 @@
   .button {
     padding: 12px 24px;
   }
+  .clients-list {
+    gap: 33px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -29,8 +32,10 @@
     width: 1024px;
     padding: 0 87px;
   }
-
+  section.hero-section {
+    padding-bottom: 113px;
+  }
   section.our-clients {
-    padding-bottom: 44px;
+    padding-bottom: 90px;
   }
 }

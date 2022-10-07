@@ -7,14 +7,16 @@ section.our-features {
 
 .our-features-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .our-features-list > li {
   text-align: center;
+  width: 328px;
+  max-width: 415px;
 }
 
 .our-features-name {
