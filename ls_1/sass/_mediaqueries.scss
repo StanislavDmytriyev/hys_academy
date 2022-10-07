@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+  body {
+    background-size: auto, 100%, auto;
+    background-position-y: 4rem, 0rem, 0rem;
+    background-position-x: 80%, right, 0%;
+  }
+  .hero__description {
+    width: 415px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  body {
+    background-size: auto, auto, auto;
+  }
+  header.header {
+    padding-bottom: 11em;
+  }
+  .button {
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1024px;
+    padding: 0 87px;
+  }
+
+  section.our-clients {
+    padding-bottom: 44px;
+  }
+}

@@ -1056,9 +1056,8 @@ body {
   font-weight: 400;
   font-style: normal;
   background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png), url(../img/background-mess.png);
-  background-size: 100%, 100%, 100%;
+  background-size: 100%, 100%, auto;
   background-position-y: 3rem, 0rem, 0rem;
-  background-position-x: right;
   background-repeat: no-repeat, no-repeat, repeat;
   margin: 0 auto;
   max-width: 1440px;
@@ -1070,13 +1069,6 @@ body {
   padding: 0 24px;
   margin: 0 auto; }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 720px; } }
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1024px;
-    padding: 0 10px; } }
 .tech__blueLineEnd {
   display: flex;
   align-items: flex-end; }
@@ -1218,5 +1210,33 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain); }
+
+@media screen and (min-width: 500px) {
+  body {
+    background-size: auto, 100%, auto;
+    background-position-y: 4rem, 0rem, 0rem;
+    background-position-x: 80%, right, 0%; }
+
+  .hero__description {
+    width: 415px; } }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px; }
+
+  body {
+    background-size: auto, auto, auto; }
+
+  header.header {
+    padding-bottom: 11em; }
+
+  .button {
+    padding: 12px 24px; } }
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1024px;
+    padding: 0 87px; }
+
+  section.our-clients {
+    padding-bottom: 44px; } }
 
 /*# sourceMappingURL=styles.css.map */
