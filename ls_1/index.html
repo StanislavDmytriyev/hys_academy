@@ -715,12 +715,27 @@
         </ul>
       </section>
       <!-- -=-=-=-=-=-SUBMIT SECTION-=-=-=-=-=- -->
-      <form id="submit-form" action="submit-your-contacts">
-        <input type="text" placeholder="Name Surname" />
-        <input type="text" placeholder="Phone" />
-        <input type="text" placeholder="Enter your email..." />
-        <button class="button send-button" type="submit">Send</button>
-      </form>
+      <!-- -=-=-=-=-=-_submit.scss-=-=-=-=-=- -->
+      <section class="submit__section container">
+        <form
+          class="submit__form"
+          id="submit-form"
+          action="submit-your-contacts"
+        >
+          <input
+            class="submit__form__input"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input class="submit__form__input" type="text" placeholder="Phone" />
+          <input
+            class="submit__form__input"
+            type="text"
+            placeholder="Enter your email..."
+          />
+          <button class="button send__button" type="submit">Send</button>
+        </form>
+      </section>
     </main>
     <!-- -=-=-=-=-=-FOOTER-=-=-=-=-=- -->
     <footer class="footer-info container">

@@ -64,7 +64,7 @@ h2 {
   box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover;
 }
 .paginator__button:active {
-  border: 1px solid var(--greenSendButton);
+  border: 1px solid var(--greenMain);
   box-shadow: none;
 }
 
@@ -139,6 +139,26 @@ h2 {
   background-color: var(--greyText);
 }
 
+.send__button {
+  min-width: 327px;
+  max-width: 420px;
+  height: 40px;
+  background-color: var(--greenMain);
+  box-shadow: 0px 4px 16px var(--sendButtonDefaultShadow);
+  color: var(--whiteMain);
+  cursor: pointer;
+  margin-top: 16px;
+}
+.send__button:hover,
+.send__button:focus {
+  background: var(--greenSendButtonHover);
+  box-shadow: 0px 0px 12px var(--sendButtonHoverShadow);
+}
+.send__button:active {
+  background: var(--greenSendButtonActive);
+  box-shadow: 0px 0px 12px var(--shadowGreenPlayButton);
+}
+
 .transparent-button {
   color: var(--whiteMain);
   background: none;
@@ -173,26 +193,6 @@ h2 {
   background-color: var(--greenButtonPressed);
 }
 
-.send-button {
-  width: 120px;
-  height: 40px;
-  background-color: var(--greenSendButton);
-  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
-  color: var(--whiteMain);
-  cursor: pointer;
-}
-
-.send-button:hover,
-.send-button:focus {
-  background: var(--greenSendButtonHover);
-  box-shadow: 0px 10px 16px 4px var(--shadowGreenSendButtonHover);
-}
-
-.send-button:active {
-  background: var(--greenSendButtonActive);
-  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
-}
-
 .transparent-button:hover,
 .transparent-button:focus {
   background: var(--greyTransparentButton);
@@ -201,27 +201,6 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain);
-}
-
-form {
-  input {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 0px 12px;
-    width: 90vw;
-    height: 44px;
-    background: var(--whiteInputFieldBackground);
-    border-radius: 22px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--greyText);
-    border: none;
-  }
-  input:focus,
-  input:focus-visible,
-  input:hover {
-    border: 2px solid var(--blueMain);
-  }
 }
 
 // <!-- -=-=-=-=-=-FOOTER-=-=-=-=-=- -- >

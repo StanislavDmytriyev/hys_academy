@@ -1,0 +1,28 @@
+section.submit__section {
+  padding-top: 40px;
+}
+
+.submit__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  input:focus,
+  input:focus-visible,
+  input:hover {
+    border: 2px solid var(--blueMain);
+  }
+}
+.submit__form__input {
+  min-width: 327px;
+  max-width: 420px;
+  height: 44px;
+  padding: 0px 12px;
+  background: var(--whiteInputFieldBackground);
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--greyText);
+  border: none;
+  //   margin-bottom: 16px;
+}

@@ -68,8 +68,7 @@ table {
   --greenButtonHover: #c0ffe4;
   --greenButtonPressed: #83ebbf;
   --greenVeryLight: #97f5cd;
-  --greenSendButton: #64be97;
-  --greenSendButtonHover: #25de8e;
+  --greenSendButtonHover: #49cd94;
   --greenSendButtonActive: #4dda9d;
   --greenSlickButtonActive: #55b089;
   --greenLightBackgroundCard: #d6fae7;
@@ -83,6 +82,8 @@ table {
   --pinkDecorationDot: #fde7e6;
   --pinkDecorationSquare: #ffefef;
   --shadowGreenPlayButton: rgba(75, 202, 103, 0.56);
+  --sendButtonDefaultShadow: rgba(75, 202, 103, 0.4);
+  --sendButtonHoverShadow: rgba(75, 202, 103, 0.8);
   --shadowGreenSendButtonHover: rgba(52, 210, 142, 0.58);
   --shadowLightBlueCarouselButtonHover: #e2edfb;
   --shadowLightBlueCourseCards: rgba(27, 99, 240, 0.4); }
@@ -601,6 +602,115 @@ section.why-choose-us-section {
   align-items: center;
   gap: 8px; }
 
+section.which-you-prefer-section {
+  padding-bottom: 63px; }
+
+.which-one-you-prefer-section-header {
+  width: 243px; }
+
+.which-one-you-prefer-section-description {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: var(--greyText);
+  margin-bottom: 21px;
+  padding-top: 16px; }
+
+.courses-carousel-filter {
+  width: 200px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  background: var(--whiteInputFieldBackground);
+  color: var(--greyText);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 22px;
+  margin: 0 auto 21px auto; }
+  .courses-carousel-filter select {
+    background: var(--whiteInputFieldBackground);
+    color: inherit;
+    font-family: inherit; }
+  .courses-carousel-filter option {
+    width: 148px;
+    height: 20px;
+    background: var(--whiteInputFieldBackground);
+    color: inherit;
+    font-family: inherit; }
+
+.courses-carousel-filter:active {
+  border: 1px solid var(--blueMain); }
+
+.courses-carousel-filter:disabled {
+  border: 1px solid #c6c6ca; }
+  .courses-carousel-filter:disabled select {
+    color: #c6c6c6; }
+  .courses-carousel-filter:disabled option {
+    color: #c6c6c6; }
+
+.prefer__courses__slider {
+  padding: 0 48px;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.prefer__courses__slider__left__button,
+.prefer__courses__slider__right__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.prefer__courses__slider__left__button {
+  left: -1px; }
+
+.prefer__courses__slider__right__button {
+  right: -1px; }
+
+.prefer__courses__list {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+  gap: 20px; }
+
+.preferred__course__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 197px;
+  height: 197px;
+  box-shadow: 0px 7px 20px #e2edfb;
+  border-radius: 4px; }
+
+.preferred01 {
+  background: linear-gradient(0deg, rgba(101, 131, 255, 0.8), rgba(101, 131, 255, 0.8)), url(../img/preferred-courses-cards/preferred01.png); }
+
+.preferred02 {
+  background: linear-gradient(0deg, rgba(240, 199, 45, 0.8), rgba(240, 199, 45, 0.8)), url(../img/preferred-courses-cards/preferred02.png); }
+
+.preferred03 {
+  background: linear-gradient(0deg, rgba(148, 87, 243, 0.8), rgba(148, 87, 243, 0.8)), url(../img/preferred-courses-cards/preferred03.png); }
+
+.preferred04 {
+  background: linear-gradient(0deg, rgba(254, 95, 96, 0.8), rgba(254, 95, 96, 0.8)), url(../img/preferred-courses-cards/preferred04.png); }
+
+.preferred__course__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--whiteMain); }
+
+.preferred__link:hover,
+.preferred__link:focus {
+  opacity: 0.7; }
+
 section.our-great-customers {
   display: flex;
   flex-direction: column;
@@ -829,114 +939,30 @@ section.latest__blog {
   display: flex;
   gap: 22px; }
 
-section.which-you-prefer-section {
-  padding-bottom: 63px; }
+section.submit__section {
+  padding-top: 40px; }
 
-.which-one-you-prefer-section-header {
-  width: 243px; }
-
-.which-one-you-prefer-section-description {
-  font-size: 14px;
-  line-height: 1.57;
-  text-align: center;
-  color: var(--greyText);
-  margin-bottom: 21px;
-  padding-top: 16px; }
-
-.courses-carousel-filter {
-  width: 200px;
-  height: 48px;
+.submit__form {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 6px 12px;
-  gap: 4px;
+  flex-direction: column;
+  gap: 16px; }
+  .submit__form input:focus,
+  .submit__form input:focus-visible,
+  .submit__form input:hover {
+    border: 2px solid var(--blueMain); }
+
+.submit__form__input {
+  min-width: 327px;
+  max-width: 420px;
+  height: 44px;
+  padding: 0px 12px;
   background: var(--whiteInputFieldBackground);
-  color: var(--greyText);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   border-radius: 22px;
-  margin: 0 auto 21px auto; }
-  .courses-carousel-filter select {
-    background: var(--whiteInputFieldBackground);
-    color: inherit;
-    font-family: inherit; }
-  .courses-carousel-filter option {
-    width: 148px;
-    height: 20px;
-    background: var(--whiteInputFieldBackground);
-    color: inherit;
-    font-family: inherit; }
-
-.courses-carousel-filter:active {
-  border: 1px solid var(--blueMain); }
-
-.courses-carousel-filter:disabled {
-  border: 1px solid #c6c6ca; }
-  .courses-carousel-filter:disabled select {
-    color: #c6c6c6; }
-  .courses-carousel-filter:disabled option {
-    color: #c6c6c6; }
-
-.prefer__courses__slider {
-  padding: 0 48px;
-  position: relative;
-  display: flex;
-  justify-content: center; }
-
-.prefer__courses__slider__left__button,
-.prefer__courses__slider__right__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.prefer__courses__slider__left__button {
-  left: -1px; }
-
-.prefer__courses__slider__right__button {
-  right: -1px; }
-
-.prefer__courses__list {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  margin: 0 auto;
-  max-width: 100%;
-  gap: 20px; }
-
-.preferred__course__card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 197px;
-  height: 197px;
-  box-shadow: 0px 7px 20px #e2edfb;
-  border-radius: 4px; }
-
-.preferred01 {
-  background: linear-gradient(0deg, rgba(101, 131, 255, 0.8), rgba(101, 131, 255, 0.8)), url(../img/preferred-courses-cards/preferred01.png); }
-
-.preferred02 {
-  background: linear-gradient(0deg, rgba(240, 199, 45, 0.8), rgba(240, 199, 45, 0.8)), url(../img/preferred-courses-cards/preferred02.png); }
-
-.preferred03 {
-  background: linear-gradient(0deg, rgba(148, 87, 243, 0.8), rgba(148, 87, 243, 0.8)), url(../img/preferred-courses-cards/preferred03.png); }
-
-.preferred04 {
-  background: linear-gradient(0deg, rgba(254, 95, 96, 0.8), rgba(254, 95, 96, 0.8)), url(../img/preferred-courses-cards/preferred04.png); }
-
-.preferred__course__name {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--whiteMain); }
-
-.preferred__link:hover,
-.preferred__link:focus {
-  opacity: 0.7; }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--greyText);
+  border: none; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -991,7 +1017,7 @@ h2 {
   box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover; }
 
 .paginator__button:active {
-  border: 1px solid var(--greenSendButton);
+  border: 1px solid var(--greenMain);
   box-shadow: none; }
 
 .play-button {
@@ -1053,6 +1079,25 @@ h2 {
   color: var(--blackMain);
   background-color: var(--greyText); }
 
+.send__button {
+  min-width: 327px;
+  max-width: 420px;
+  height: 40px;
+  background-color: var(--greenMain);
+  box-shadow: 0px 4px 16px var(--sendButtonDefaultShadow);
+  color: var(--whiteMain);
+  cursor: pointer;
+  margin-top: 16px; }
+
+.send__button:hover,
+.send__button:focus {
+  background: var(--greenSendButtonHover);
+  box-shadow: 0px 0px 12px var(--sendButtonHoverShadow); }
+
+.send__button:active {
+  background: var(--greenSendButtonActive);
+  box-shadow: 0px 0px 12px var(--shadowGreenPlayButton); }
+
 .transparent-button {
   color: var(--whiteMain);
   background: none;
@@ -1080,23 +1125,6 @@ h2 {
 .green-button:active {
   background-color: var(--greenButtonPressed); }
 
-.send-button {
-  width: 120px;
-  height: 40px;
-  background-color: var(--greenSendButton);
-  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
-  color: var(--whiteMain);
-  cursor: pointer; }
-
-.send-button:hover,
-.send-button:focus {
-  background: var(--greenSendButtonHover);
-  box-shadow: 0px 10px 16px 4px var(--shadowGreenSendButtonHover); }
-
-.send-button:active {
-  background: var(--greenSendButtonActive);
-  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton); }
-
 .transparent-button:hover,
 .transparent-button:focus {
   background: var(--greyTransparentButton); }
@@ -1104,23 +1132,6 @@ h2 {
 .transparent-button:active {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain); }
-
-form input {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding: 0px 12px;
-  width: 90vw;
-  height: 44px;
-  background: var(--whiteInputFieldBackground);
-  border-radius: 22px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--greyText);
-  border: none; }
-form input:focus,
-form input:focus-visible,
-form input:hover {
-  border: 2px solid var(--blueMain); }
 
 .footer-info .footer-nav-expanded h3 {
   font-weight: 700;
