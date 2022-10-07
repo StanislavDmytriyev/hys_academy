@@ -45,6 +45,29 @@ h2 {
   line-height: 1.38;
 }
 
+// <!-- -=-=-=-=-=-PAGINATOR BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-PAGINATOR BUTTONS-=-=-=-=-=- -->
+.paginator__button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--blueLatestBlog);
+  width: 40px;
+  height: 40px;
+  background: var(--whiteMain);
+  border-radius: 20px;
+  padding: 8px;
+}
+.paginator__button:hover,
+.paginator__button:focus {
+  box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover;
+}
+.paginator__button:active {
+  border: 1px solid var(--greenSendButton);
+  box-shadow: none;
+}
+
 // <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
 // <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
 .play-button {
@@ -179,7 +202,6 @@ h2 {
   background: var(--greyTransparentButton);
   border: 2px solid var(--whiteMain);
 }
-
 
 form {
   input {

@@ -648,55 +648,69 @@
       </section>
       <!-- -=-=-=-=-=-LATEST BLOG SECTION-=-=-=-=-=- -->
       <!-- -=-=-=-=-=-_latestblog.scss-=-=-=-=-=- -->
-      <section class="latest-blog container">
-        <h2 class="blue-line">Latest Blog</h2>
-        <ul class="blog-list">
-          <li>
-            <h3>DESIGN</h3>
+      <section class="latest__blog container">
+        <h2 class="latest__blog__header blue-line">Latest Blog</h2>
+        <ul class="blog__list">
+          <li class="blog__card">
+            <h3 class="blog__card__header">DESIGN</h3>
             <img
-              src="./img/fancy-work02.png"
-              width="328"
+              class="blog__card__image"
+              src="./img/blog-card-image.jpg"
+              width="259"
+              height="160"
               alt="working at the computer"
             />
             <img
-              src="./img/handsome.png"
+              class="blog__card__portrait"
+              src="./img/mentor-portraits/handsome.png"
               width="48"
               alt="designer's portrait"
             />
-            <h4>International Conferenceon Bussiness</h4>
-            <a href="">Read Now</a>
+            <h4 class="blog__card__title">
+              International Conference on Bussiness
+            </h4>
+            <a class="blog__card__link" href="">Read Now</a>
           </li>
-          <li>
-            <h3>DESIGN</h3>
+          <li class="blog__card">
+            <h3 class="blog__card__header">DESIGN</h3>
             <img
-              src="./img/fancy-work01.png"
-              width="328"
+              class="blog__card__image"
+              src="./img/blog-card-image.jpg"
+              width="259"
+              height="160"
               alt="working at the computer"
             />
             <img
-              src="./img/indian-fella.png"
+              class="blog__card__portrait"
+              src="./img/mentor-portraits/handsome.png"
               width="48"
               alt="designer's portrait"
             />
-            <h4>International Conferenceon Bussiness</h4>
-            <a href="">Read Now</a>
+            <h4 class="blog__card__title">
+              International Conference on Bussiness
+            </h4>
+            <a class="blog__card__link" href="">Read Now</a>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <button type="button" class="slick-next">1</button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">2</button>
-          </li>
-          <li>
-            <button type="button" class="slick-next active">3</button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">4</button>
-          </li>
-          <li>
-            <button type="button" class="slick-next">5</button>
+          <li class="paginator__technical__container">
+            <ul class="paginator__list">
+              <li>
+                <button type="button" class="paginator__button">1</button>
+              </li>
+              <li>
+                <button type="button" class="paginator__button">2</button>
+              </li>
+              <li>
+                <button type="button" class="paginator__button active">
+                  3
+                </button>
+              </li>
+              <li>
+                <button type="button" class="paginator__button">4</button>
+              </li>
+              <li>
+                <button type="button" class="paginator__button">5</button>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
