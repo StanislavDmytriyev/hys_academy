@@ -257,8 +257,7 @@ section.our-features {
 
 .our-features-list > li {
   text-align: center;
-  width: 328px;
-  max-width: 415px; }
+  min-width: 328px; }
 
 .our-features-name {
   font-weight: 600;
@@ -1235,7 +1234,15 @@ h2 {
     padding: 12px 24px; }
 
   .clients-list {
-    gap: 33px; } }
+    gap: 33px; }
+
+  .our-features-list {
+    justify-content: space-between;
+    row-gap: 40px; }
+
+  .our-features-list > li {
+    width: 415px;
+    height: 168px; } }
 @media screen and (min-width: 1440px) {
   .container {
     width: 1024px;
@@ -1245,6 +1252,9 @@ h2 {
     padding-bottom: 113px; }
 
   section.our-clients {
-    padding-bottom: 90px; } }
+    padding-bottom: 90px; }
+
+  .our-features-list > li {
+    text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */

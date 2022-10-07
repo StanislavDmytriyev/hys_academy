@@ -25,6 +25,14 @@
   .clients-list {
     gap: 33px;
   }
+  .our-features-list {
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+  .our-features-list > li {
+    width: 415px;
+    height: 168px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -37,5 +45,8 @@
   }
   section.our-clients {
     padding-bottom: 90px;
+  }
+  .our-features-list > li {
+    text-align: left;
   }
 }
