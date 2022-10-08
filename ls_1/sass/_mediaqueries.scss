@@ -13,6 +13,13 @@
   .container {
     width: 720px;
   }
+  #primaryNav {
+    display: flex;
+    gap: 20px;
+  }
+  #hamburgerBtn {
+    display: none;
+  }
   body {
     background-size: auto, auto, auto;
   }

@@ -142,6 +142,10 @@ header.header {
   left: 6%;
   z-index: 5; }
 
+.header-navigation > a.button.blue-button {
+  margin-left: 40px;
+  margin-right: 20px; }
+
 .header .main-logo {
   flex-grow: 10; }
 
@@ -154,9 +158,6 @@ header.header {
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--blueMain); }
-
-.header-navigation > ul.open {
-  display: block; }
 
 .header-navigation > ul {
   display: none; }
@@ -181,6 +182,21 @@ button#hamburgerBtn:focus {
 
 button#hamburgerBtn:active {
   color: var(--blackMain); }
+
+.header-navigation > ul.open {
+  display: flex;
+  flex-direction: column;
+  width: 327px; }
+  .header-navigation > ul.open .header-nav-link {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0; }
 
 section.hero-section {
   background-repeat: no-repeat;
@@ -1233,6 +1249,13 @@ h2 {
 @media screen and (min-width: 768px) {
   .container {
     width: 720px; }
+
+  #primaryNav {
+    display: flex;
+    gap: 20px; }
+
+  #hamburgerBtn {
+    display: none; }
 
   body {
     background-size: auto, auto, auto; }

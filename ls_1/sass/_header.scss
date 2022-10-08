@@ -14,6 +14,8 @@ header.header {
 }
 
 .header-navigation > a.button.blue-button {
+  margin-left: 40px;
+  margin-right: 20px;
 }
 .header .main-logo {
   flex-grow: 10;
@@ -28,10 +30,6 @@ header.header {
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--blueMain);
-}
-
-.header-navigation > ul.open {
-  display: block;
 }
 
 .header-navigation > ul {
@@ -60,4 +58,23 @@ button#hamburgerBtn:focus {
 }
 button#hamburgerBtn:active {
   color: var(--blackMain);
+}
+
+.header-navigation > ul.open {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  .header-nav-link {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.38;
+    color: #000000;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
 }
