@@ -107,21 +107,16 @@ table {
   height: 2px;
   background-color: var(--blueMain); }
 
-.blue-line-far-away::after {
-  content: "";
-  display: inline-block;
-  text-align: right;
-  width: 56px;
-  height: 2px;
-  background-color: var(--blueMain); }
-
 .greyCircle::after {
   content: "";
   display: none;
   width: 32px;
   height: 32px;
   background: var(--greyDecorationCircle);
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  right: 9px;
+  top: 86px; }
 
 .pinkSquare::after {
   content: "";
@@ -129,32 +124,10 @@ table {
   width: 40px;
   height: 40px;
   background: var(--pinkDecorationSquare);
-  border-radius: 8px; }
-
-.greenBackgroundCard::after {
-  content: "";
-  display: block;
-  width: 415px;
-  height: 264px;
-  background: var(--greenLightBackgroundCard);
-  border-radius: 16px 16px 0px 16px; }
-
-.whiteHorLine::after {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 1px;
-  background-color: var(--whiteMain);
-  margin-top: 48px;
-  margin: 48px 0 0 -16px; }
-
-.blueSquare::before {
-  content: "";
-  display: block;
-  width: 344px;
-  height: 344px;
-  background: var(--blueDecorationSquare);
-  border-radius: 24px; }
+  border-radius: 8px;
+  position: absolute;
+  right: -132px;
+  top: -32px; }
 
 header.header {
   height: 40px;
@@ -419,8 +392,7 @@ section.popular-courses-section {
 
 section.take-tour {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: hidden;
   margin-bottom: 113px; }
 
@@ -431,8 +403,8 @@ section.take-tour {
 
 .play-button {
   position: absolute;
-  left: 169px;
-  top: 197px; }
+  left: 45vw;
+  top: 38%; }
 
 .take-tour-aside {
   margin-left: -24px;
@@ -1242,11 +1214,24 @@ h2 {
 
   .our-features-list > li {
     width: 415px;
-    height: 168px; } }
+    height: 168px; }
+
+  .take-tour-aside {
+    width: 415px;
+    margin: 57px 0 20px 0;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .greyCircle::after {
+    display: inline-block;
+    top: 86px; }
+
+  .pinkSquare::after {
+    display: inline-block; } }
 @media screen and (min-width: 1440px) {
   .container {
     width: 1024px;
-    padding: 0 87px; }
+    padding: 0 24px; }
 
   section.hero-section {
     padding-bottom: 113px; }
@@ -1255,6 +1240,28 @@ h2 {
     padding-bottom: 90px; }
 
   .our-features-list > li {
-    text-align: left; } }
+    text-align: left; }
+
+  section.popular-courses-section {
+    padding-top: 60px;
+    padding-bottom: 44px; }
+
+  .popular__courses__slider {
+    padding-top: 22px; }
+
+  .course-card {
+    width: 270px; }
+
+  section.take-tour.container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 1440px;
+    gap: 115px;
+    padding-bottom: 60px;
+    margin-bottom: 0; }
+
+  .play-button {
+    left: 34vw;
+    top: 44%; } }
 
 /*# sourceMappingURL=styles.css.map */

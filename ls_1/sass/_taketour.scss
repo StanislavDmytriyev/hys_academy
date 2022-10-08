@@ -1,7 +1,6 @@
 section.take-tour {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: hidden;
   margin-bottom: 113px;
 }
@@ -14,8 +13,8 @@ section.take-tour {
 
 .play-button {
   position: absolute;
-  left: 169px;
-  top: 197px;
+  left: 45vw;
+  top: 38%;
 }
 
 .take-tour-aside {
