@@ -46,6 +46,10 @@
   .pinkSquare::after {
     display: inline-block;
   }
+  .featured-aside {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -80,9 +84,37 @@
     padding-bottom: 60px;
     margin-bottom: 0;
   }
-
   .play-button {
     left: 34vw;
     top: 44%;
+  }
+  section.why-choose-us-section.container {
+    width: 1440px;
+  }
+  .why__choose__us__left__block {
+    padding-left: 208px;
+    padding-top: 69px;
+  }
+  .featured-aside {
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .featured-title {
+    font-size: 60px;
+    letter-spacing: 0.4em;
+    padding-bottom: 24px;
+  }
+  .featured-counter {
+    margin-left: 63px;
+    padding-right: 23px;
+  }
+  .featured-card {
+    margin-left: 63px;
+    margin-top: 40px;
+    margin-bottom: 67px;
+  }
+  a.button.blue-button {
+    margin-left: 63px;
   }
 }
