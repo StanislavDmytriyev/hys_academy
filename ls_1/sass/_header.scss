@@ -8,14 +8,15 @@ header.header {
   display: flex;
   align-items: center;
   position: fixed;
+  right: 14%;
+  left: 6%;
   z-index: 5;
-  width: calc(100vw - 48px);
 }
 
 .header-navigation > a.button.blue-button {
-  margin-left: auto;
-  margin-right: 8px;
-  align-self: flex-end;
+}
+.header .main-logo {
+  flex-grow: 10;
 }
 
 .header-nav-link {

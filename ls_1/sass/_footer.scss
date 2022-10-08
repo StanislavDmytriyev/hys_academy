@@ -1,13 +1,12 @@
 footer.footer__info {
   padding-top: 52px;
-}
-.footer__nav__expanded {
-  border-bottom: 1px solid #1a5c5c5c;
+  display: flex;
+  flex-direction: column;
 }
 .footer__nav__expanded__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  row-gap: 20px;
 }
 .footer__nav__expanded__list__logo {
   min-width: 154px;
@@ -58,6 +57,7 @@ footer.footer__info {
 .footer__nav__minimized {
   padding-top: 76px;
   padding-bottom: 24px;
+  border-top: 1px solid #1a5c5c5c;
 }
 .footer__nav__minimized__list {
   display: flex;

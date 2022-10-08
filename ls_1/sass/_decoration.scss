@@ -23,6 +23,7 @@ body {
 .tech__blueLineEnd {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 
 h2 {
@@ -126,14 +127,14 @@ h2 {
 }
 
 .send__button {
-  min-width: 327px;
+  width: 327px;
   max-width: 420px;
   height: 40px;
   background-color: var(--greenMain);
   box-shadow: 0px 4px 16px var(--sendButtonDefaultShadow);
   color: var(--whiteMain);
   cursor: pointer;
-  margin-top: 16px;
+  margin: 16px auto 0 auto;
 }
 .send__button:hover,
 .send__button:focus {

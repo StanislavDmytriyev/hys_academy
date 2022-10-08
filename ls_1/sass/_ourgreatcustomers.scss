@@ -1,6 +1,7 @@
 section.our-great-customers {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 63px;
   background-image: url(../img/weird-spots.png);
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@ section.our-great-customers {
   height: 273px;
   border-radius: 24px;
   box-shadow: -54px -46px 0 0 var(--blueDecorationSquare);
+  margin-left: 54px;
 }
 .great__customers__text__block {
   padding-bottom: 97px;
@@ -45,6 +47,7 @@ section.our-great-customers {
   line-height: 1.57;
   color: var(--greyText);
   display: inline-block;
+  max-width: 415px;
 }
 .quote__author {
   font-weight: 700;

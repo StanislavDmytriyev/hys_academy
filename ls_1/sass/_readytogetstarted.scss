@@ -1,11 +1,15 @@
 section.get__started {
   background-image: url(../img/background.png);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 190px;
 }
 
 .get__started__text__block {
   margin-left: 0;
+  width: 100%;
+  max-width: 415px;
 }
 .get-started-slogan {
   font-weight: 700;
@@ -40,6 +44,8 @@ section.get__started {
 
 .get__started__quickLink__block {
   padding-top: 55px;
+  width: 100%;
+  max-width: 415px;
 }
 .get__started__quickLink__technical__box {
   display: flex;
