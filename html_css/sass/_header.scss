@@ -1,19 +1,17 @@
 header.header {
-  height: 40px;
-  padding-top: 24px;
-  padding-bottom: 401px;
-}
-
-.header-navigation {
-  display: flex;
-  align-items: center;
+  padding-top: 36px;
   position: fixed;
-  right: 14%;
-  left: 6%;
+  width: 100%;
+  left: 0;
   z-index: 5;
 }
 
-.header-navigation > a.button.blue-button {
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation > a.button.blue-button {
   margin-left: 40px;
   margin-right: 20px;
 }
@@ -32,7 +30,7 @@ header.header {
   color: var(--blueMain);
 }
 
-.header-navigation > ul {
+.header__navigation > ul {
   display: none;
 }
 
@@ -60,7 +58,7 @@ button#hamburgerBtn:active {
   color: var(--blackMain);
 }
 
-.header-navigation > ul.open {
+.header__navigation > ul.open {
   display: flex;
   flex-direction: column;
   width: 327px;
