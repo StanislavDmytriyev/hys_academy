@@ -1084,7 +1084,6 @@ body {
   background-position-y: 3rem, 0rem, 0rem;
   background-repeat: no-repeat, no-repeat, repeat;
   margin: 0 auto;
-  max-width: 1440px;
   display: flex;
   flex-direction: column; }
 
