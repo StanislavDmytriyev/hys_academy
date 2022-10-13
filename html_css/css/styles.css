@@ -936,10 +936,14 @@ section.our-great-customers {
 
 section.get__started {
   background-image: url(../img/background.png);
+  background-size: contain;
+  padding-top: 64px;
+  padding-bottom: 74px;
+}
+
+section.get__started > .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 190px;
+  column-gap: 194px;
 }
 
 .get__started__text__block {
