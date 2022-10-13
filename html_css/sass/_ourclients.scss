@@ -1,0 +1,18 @@
+section.our-clients {
+  padding-bottom: 44px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.clients-list a:hover,
+.clients-list a:focus {
+  --color12: var(--blueMain);
+}
+
+.clients-google {
+  margin-right: -5px;
+}

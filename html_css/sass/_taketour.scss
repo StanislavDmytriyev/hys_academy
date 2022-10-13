@@ -1,0 +1,63 @@
+section.take-tour {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 113px;
+  background: linear-gradient(235.25deg, #ffffff 41.4%, #fafbff 60.76%);
+}
+
+.video {
+  margin-left: -24px;
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.play-button {
+  position: absolute;
+  left: 45vw;
+  top: 38%;
+}
+
+.take-tour-aside {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 20px;
+}
+
+.take-tour-section-header {
+  margin-bottom: 24px;
+}
+
+.university-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--blueMain);
+  margin-bottom: 6px;
+}
+.take-tour-description {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText);
+  display: block;
+  margin-bottom: 12px;
+}
+.second-chapter {
+  margin-bottom: 14px;
+}
+.pink-dots-technical-list {
+  margin-bottom: 33px;
+}
+.pink-dot {
+  position: relative;
+}
+.pink-dot-list-description {
+  margin-left: 36px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText);
+}

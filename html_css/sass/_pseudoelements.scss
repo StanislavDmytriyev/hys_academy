@@ -1,0 +1,44 @@
+.pink-dot:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--pinkDecorationDot);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.blue-line::after {
+  content: "";
+  display: inline-block;
+  margin-left: 25px;
+  width: 60px;
+  height: 2px;
+  background-color: var(--blueMain);
+}
+
+.greyCircle::after {
+  content: "";
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: var(--greyDecorationCircle);
+  border-radius: 50%;
+  position: absolute;
+  right: 9px;
+  top: 86px;
+}
+
+.pinkSquare::after {
+  content: "";
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: var(--pinkDecorationSquare);
+  border-radius: 8px;
+  position: absolute;
+  right: -132px;
+  top: -32px;
+}

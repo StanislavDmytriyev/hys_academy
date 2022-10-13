@@ -1,0 +1,34 @@
+section.submit__section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../img/what-a-mess.png);
+  background-repeat: repeat;
+}
+
+.submit__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  input:focus,
+  input:focus-visible,
+  input:hover {
+    border-color: var(--blueMain);
+    transition: 0.5s;
+  }
+}
+.submit__form__input {
+  min-width: 327px;
+  max-width: 420px;
+  height: 44px;
+  padding: 0px 12px;
+  background: var(--whiteInputFieldBackground);
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--greyText);
+  border: none;
+  border: 2px solid var(--whiteInputFieldBackground);
+
+  //   margin-bottom: 16px;
+}

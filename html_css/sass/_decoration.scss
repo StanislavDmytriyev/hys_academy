@@ -1,0 +1,189 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--blackMain);
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png);
+  background-size: 100%, 100%;
+  background-position-y: 3rem, 0rem;
+  background-repeat: no-repeat, no-repeat;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.tech__blueLineEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+// <!-- -=-=-=-=-=-PAGINATOR BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-PAGINATOR BUTTONS-=-=-=-=-=- -->
+.paginator__button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--blueLatestBlog);
+  width: 40px;
+  height: 40px;
+  background: var(--whiteMain);
+  border-radius: 20px;
+  padding: 8px;
+}
+.paginator__button:hover,
+.paginator__button:focus {
+  box-shadow: 0px 4px 16px var(--shadowLightBlueCarouselButtonHover);
+}
+.paginator__button:active {
+  border: 1px solid var(--greenMain);
+  box-shadow: none;
+}
+
+// <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-PLAY BUTTONS-=-=-=-=-=- -->
+.play-button {
+  padding: 6px 9px;
+  width: 40px;
+  height: 40px;
+  background: var(--greenMain);
+  border: 2px solid var(--whiteMain);
+  box-shadow: 0px 4px 16px var(--shadowGreenPlayButton);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.play-button:hover,
+.play-button:focus {
+  border-color: var(--greenMain);
+}
+.play-button:active {
+  background: var(--greenSlickButtonActive);
+  box-shadow: none;
+  padding: 7px 10px;
+}
+
+// <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-SLICK BUTTONS-=-=-=-=-=- -->
+.slick-prev {
+  transform: rotate(180deg);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 16px #e2edfb;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.slick-next {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 4px 16px #e2edfb;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.slick-next:hover,
+.slick-next:focus,
+.slick-prev:hover,
+.slick-prev:focus {
+  --color1: var(--greenMain);
+  --color4: var(--whiteMain);
+}
+
+.slick-next:active,
+.slick-prev:active {
+  --color1: var(--greenSlickButtonActive);
+}
+
+// <!-- -=-=-=-=-=-STANDARD BUTTONS-=-=-=-=-=- -->
+// <!-- -=-=-=-=-=-STANDARD BUTTONS-=-=-=-=-=- -->
+.button {
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 22px;
+  line-height: 1.33;
+  padding: 12px 20px;
+  color: var(--blackMain);
+  background-color: var(--greyText);
+}
+
+.send__button {
+  width: 327px;
+  max-width: 420px;
+  height: 40px;
+  background-color: var(--greenMain);
+  box-shadow: 0px 4px 16px var(--sendButtonDefaultShadow);
+  color: var(--whiteMain);
+  cursor: pointer;
+  margin: 16px auto 0 auto;
+  transition: 0.5s;
+}
+.send__button:hover,
+.send__button:focus {
+  background: var(--greenSendButtonHover);
+  box-shadow: 0px 0px 12px var(--sendButtonHoverShadow);
+}
+.send__button:active {
+  background: var(--greenSendButtonActive);
+  box-shadow: 0px 0px 12px var(--shadowGreenPlayButton);
+}
+
+.transparent-button {
+  color: var(--whiteMain);
+  background: none;
+  border: 1px solid var(--whiteMain);
+}
+
+.blue-button {
+  background-color: var(--blueMain);
+  color: var(--whiteMain);
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: var(--blueButtonHover);
+}
+
+.blue-button:active {
+  background-color: var(--blueButtonPressed);
+}
+
+.green-button {
+  color: var(--blackMain);
+  background-color: var(--greenVeryLight);
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: var(--greenButtonHover);
+}
+
+.green-button:active {
+  background-color: var(--greenButtonPressed);
+}
+
+.transparent-button:hover,
+.transparent-button:focus {
+  background: var(--greyTransparentButton);
+}
+
+.transparent-button:active {
+  background: var(--greyTransparentButton);
+  border: 2px solid var(--whiteMain);
+}

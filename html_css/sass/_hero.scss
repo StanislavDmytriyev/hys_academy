@@ -1,0 +1,25 @@
+section.hero-section {
+  background: url(../img/what-a-mess.png);
+  background-repeat: repeat;
+  padding-top: 424px;
+  padding-bottom: 55px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    padding-bottom: 32px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.57;
+    padding-bottom: 50px;
+    padding-right: 30px;
+  }
+
+  a.button.blue-button {
+    margin-right: 20px;
+    margin-bottom: 45px;
+  }
+}

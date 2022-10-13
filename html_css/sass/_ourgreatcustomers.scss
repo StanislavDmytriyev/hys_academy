@@ -1,0 +1,78 @@
+section.our-great-customers {
+  background-image: url(../img/weird-spots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 104px;
+  padding-bottom: 100px;
+  background-size: 140%;
+  background-position-x: 40%;
+  background-position-y: 110%;
+}
+
+section.our-great-customers > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 110px;
+}
+
+.great__customers__picture__block {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+}
+.great__customers__picture__image {
+  width: 273px;
+  height: 273px;
+  border-radius: 24px;
+  box-shadow: -54px -46px 0 0 var(--blueDecorationSquare);
+  margin-left: 54px;
+}
+.great__customers__section__header {
+  width: 243px;
+  display: inline-block;
+}
+.great__customers__card {
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
+.quotemark {
+  display: inline-block;
+  padding-bottom: 27px;
+}
+.great__customers__card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.great__customers__card__text {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--greyText);
+  display: inline-block;
+  max-width: 415px;
+}
+.quote__author {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  padding-top: 16px;
+}
+.carousel__buttons {
+  padding-top: 42px;
+  display: flex;
+  gap: 5px;
+}
+.carousel__scroll__button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel__scroll__button:hover,
+.carousel__scroll__button:focus {
+  transform: scale(1.3);
+}
+.carousel__scroll__button:active {
+  --color3: var(--blueMain);
+}
