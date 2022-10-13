@@ -1,13 +1,19 @@
 section.our-great-customers {
+  background-image: url(../img/weird-spots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 104px;
+  padding-bottom: 100px;
+  background-size: 140%;
+  background-position-x: 40%;
+  background-position-y: 110%;
+}
+
+section.our-great-customers > .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 63px;
-  background-image: url(../img/weird-spots.png);
-  background-repeat: no-repeat;
-  background-position-x: 42%;
-  background-position-y: 108%;
-  background-size: 144%;
+  column-gap: 110px;
 }
 
 .great__customers__picture__block {
@@ -21,9 +27,6 @@ section.our-great-customers {
   border-radius: 24px;
   box-shadow: -54px -46px 0 0 var(--blueDecorationSquare);
   margin-left: 54px;
-}
-.great__customers__text__block {
-  padding-bottom: 97px;
 }
 .great__customers__section__header {
   width: 243px;

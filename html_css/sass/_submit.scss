@@ -12,7 +12,8 @@ section.submit__section {
   input:focus,
   input:focus-visible,
   input:hover {
-    border: 2px solid var(--blueMain);
+    border-color: var(--blueMain);
+    transition: 0.5s;
   }
 }
 .submit__form__input {
@@ -27,5 +28,7 @@ section.submit__section {
   line-height: 1.14;
   color: var(--greyText);
   border: none;
+  border: 2px solid var(--whiteInputFieldBackground);
+
   //   margin-bottom: 16px;
 }

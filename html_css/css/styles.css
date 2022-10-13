@@ -146,9 +146,9 @@ table {
 header.header {
   padding-top: 24px;
   position: fixed;
-  width: 100%;
   left: 0;
   z-index: 5;
+  width: 100%;
 }
 
 .header__navigation {
@@ -156,13 +156,8 @@ header.header {
   align-items: center;
 }
 
-.header__navigation > a.button.blue-button {
-  margin-left: 40px;
-  margin-right: 20px;
-}
-
 .header .main-logo {
-  flex-grow: 10;
+  margin-right: 160px;
 }
 
 .header-nav-link {
@@ -352,7 +347,7 @@ section.popular-courses-section {
 .right-slick-button-position {
   position: absolute;
   top: 50%;
-  transform: translateY(-75%);
+  transform: translateY(-50%);
 }
 
 .left-slick-button-position {
@@ -541,7 +536,7 @@ section.take-tour {
 }
 
 section.why-choose-us-section.container {
-  margin: 0;
+  margin: 0 auto;
   max-width: 1440px;
   padding-left: 0;
   padding-right: 0;
@@ -851,15 +846,21 @@ section.which-you-prefer-section {
 }
 
 section.our-great-customers {
+  background-image: url(../img/weird-spots.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 104px;
+  padding-bottom: 100px;
+  background-size: 140%;
+  background-position-x: 40%;
+  background-position-y: 110%;
+}
+
+section.our-great-customers > .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 63px;
-  background-image: url(../img/weird-spots.png);
-  background-repeat: no-repeat;
-  background-position-x: 42%;
-  background-position-y: 108%;
-  background-size: 144%;
+  column-gap: 110px;
 }
 
 .great__customers__picture__block {
@@ -874,10 +875,6 @@ section.our-great-customers {
   border-radius: 24px;
   box-shadow: -54px -46px 0 0 var(--blueDecorationSquare);
   margin-left: 54px;
-}
-
-.great__customers__text__block {
-  padding-bottom: 97px;
 }
 
 .great__customers__section__header {
@@ -940,7 +937,7 @@ section.our-great-customers {
 
 section.get__started {
   background-image: url(../img/background.png);
-  background-size: contain;
+  background-size: cover;
   padding-top: 64px;
   padding-bottom: 74px;
 }
@@ -1060,6 +1057,7 @@ section.latest__blog {
   flex-wrap: wrap;
   row-gap: 44px;
   column-gap: 20px;
+  justify-content: center;
 }
 
 .blog__card {
@@ -1150,7 +1148,8 @@ section.submit__section {
 .submit__form input:focus,
 .submit__form input:focus-visible,
 .submit__form input:hover {
-  border: 2px solid var(--blueMain);
+  border-color: var(--blueMain);
+  transition: 0.5s;
 }
 
 .submit__form__input {
@@ -1165,18 +1164,19 @@ section.submit__section {
   line-height: 1.14;
   color: var(--greyText);
   border: none;
+  border: 2px solid var(--whiteInputFieldBackground);
 }
 
 footer.footer__info {
   padding-top: 52px;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer__nav__expanded__list {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .footer__nav__expanded__list__logo {
@@ -1317,7 +1317,7 @@ h2 {
 
 .paginator__button:hover,
 .paginator__button:focus {
-  box-shadow: 0px 4px 16px --shadowLightBlueCarouselButtonHover;
+  box-shadow: 0px 4px 16px var(--shadowLightBlueCarouselButtonHover);
 }
 
 .paginator__button:active {
@@ -1338,8 +1338,7 @@ h2 {
 
 .play-button:hover,
 .play-button:focus {
-  border: none;
-  padding: 7px 10px;
+  border-color: var(--greenMain);
 }
 
 .play-button:active {
@@ -1401,6 +1400,7 @@ h2 {
   color: var(--whiteMain);
   cursor: pointer;
   margin: 16px auto 0 auto;
+  transition: 0.5s;
 }
 
 .send__button:hover,
@@ -1469,9 +1469,26 @@ h2 {
     width: 415px;
   }
 }
+@media screen and (min-width: 500px) {
+  .footer__nav__minimized__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 720px;
+  }
+
+  #primaryNav {
+    margin-right: auto;
+  }
+
+  section.our-great-customers {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 104px;
+    padding-bottom: 91px;
   }
 
   section.hero-section {
@@ -1500,7 +1517,7 @@ h2 {
   }
 
   .our-features-list {
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 40px;
   }
 
@@ -1574,6 +1591,10 @@ h2 {
   .container {
     width: 1024px;
     padding: 0 24px;
+  }
+
+  #primaryNav {
+    margin-right: 0;
   }
 
   section.hero-section {
@@ -1717,7 +1738,6 @@ h2 {
   }
 
   .footer__nav__expanded {
-    width: 850px;
     margin: 0 auto;
     padding-top: 4px;
     padding-left: 23px;
@@ -1747,10 +1767,14 @@ h2 {
     column-gap: 20px;
   }
 
-  .footer__nav__minimized__text {
+  .footer__nav__minimized__text__fat {
     justify-self: flex-start;
     justify-content: flex-start;
     flex-grow: 10;
+  }
+
+  .header .main-logo {
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1500px) {

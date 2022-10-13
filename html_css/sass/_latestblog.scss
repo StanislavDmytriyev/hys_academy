@@ -11,6 +11,7 @@ section.latest__blog {
   flex-wrap: wrap;
   row-gap: 44px;
   column-gap: 20px;
+  justify-content: center;
 }
 .blog__card {
   display: grid;
