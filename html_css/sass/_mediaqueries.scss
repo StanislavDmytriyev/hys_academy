@@ -23,7 +23,7 @@
   body {
     background-size: auto, auto, auto;
   }
- 
+
   .button {
     padding: 12px 24px;
   }
@@ -186,9 +186,6 @@
     margin-top: -56px;
     padding-right: 50px;
   }
-  .tech__blueLineEnd {
-    justify-content: flex-start;
-  }
   section.get__started.container {
     width: 1440px;
     padding-top: 24px;
@@ -239,5 +236,14 @@
     justify-self: flex-start;
     justify-content: flex-start;
     flex-grow: 10;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  section.take-tour.container {
+    margin: 0 auto;
+  }
+  section.why-choose-us-section.container {
+    margin: 0 auto;
   }
 }

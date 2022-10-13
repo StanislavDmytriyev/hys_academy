@@ -1265,10 +1265,10 @@ body {
   color: var(--blackMain);
   font-weight: 400;
   font-style: normal;
-  background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png), url(../img/background-mess.png);
-  background-size: 100%, 100%, auto;
-  background-position-y: 3rem, 0rem, 0rem;
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png);
+  background-size: 100%, 100%;
+  background-position-y: 3rem, 0rem;
+  background-repeat: no-repeat, no-repeat;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1676,10 +1676,6 @@ h2 {
     padding-right: 50px;
   }
 
-  .tech__blueLineEnd {
-    justify-content: flex-start;
-  }
-
   section.get__started.container {
     width: 1440px;
     padding-top: 24px;
@@ -1741,6 +1737,15 @@ h2 {
     justify-self: flex-start;
     justify-content: flex-start;
     flex-grow: 10;
+  }
+}
+@media screen and (min-width: 1500px) {
+  section.take-tour.container {
+    margin: 0 auto;
+  }
+
+  section.why-choose-us-section.container {
+    margin: 0 auto;
   }
 }
 

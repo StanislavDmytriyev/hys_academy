@@ -3,11 +3,10 @@ body {
   color: var(--blackMain);
   font-weight: 400;
   font-style: normal;
-  background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png),
-    url(../img/background-mess.png);
-  background-size: 100%, 100%, auto;
-  background-position-y: 3rem, 0rem, 0rem;
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-image: url(../img/hero-image.png), url(../img/top-bg-spot.png);
+  background-size: 100%, 100%;
+  background-position-y: 3rem, 0rem;
+  background-repeat: no-repeat, no-repeat;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
